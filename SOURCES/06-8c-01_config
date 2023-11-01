@@ -1,0 +1,3 @@
+model GenuineIntel 06-8c-01
+path intel-ucode/06-8c-01
+dependency required intel skip=success match-model-mode=off

@@ -1,0 +1,4 @@
+Microcode updates for Intel Tiger Lake-UP3/UP4 (family 6, model 140, stepping 1;
+CPUID 0x806c1) are disabled as they may cause system instability.
+Please refer to /usr/share/doc/microcode_ctl/caveats/06-8c-01_readme
+and /usr/share/doc/microcode_ctl/README.caveats for details.
