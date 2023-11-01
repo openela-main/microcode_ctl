@@ -1,0 +1,54 @@
+From f417c9e579a324ed336c4cf98eba944907955421 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 22 Aug 2023 17:38:34 +0200
+Subject: [PATCH 10/10] releasenote.md: add old revisions for 06-be-00/11,
+ 06-ba-02/e0, and 06-ba-03/e0
+
+As has been mentioned already in commit "releasenote.md: add missing
+06-ba-03/e0 to the new microcode section", platforms with CPUIDs 06-be-00,
+06-ba-02, and 06-ba-03 have their platform mask changed and thusly listed
+in both "New Platforms" and "Updated Platforms" sections
+of microcode-20230808 release notes.  It is, however, puzzling to have
+the "Old Ver" field of these entries empty in the "Updated Platforms"
+section, so it seemingly make sense to populate it with the previous
+microcode versions for the existing platforms.
+
+* releasenote.md (microcode-20230808) <Updated Platforms>: Provide
+00000010 as the "Old Ver" field value for ADL-N A0 (06-be-00/11,
+nee 06-be-00/01);  provide 00004112 as the "Old Ver" field value
+for RPL-H/P/PX 6+8 J0 (06-ba-02/e0, nee 06-ba-02/c0) and RPL-U 2+8 Q0
+(06-ba-03/e0, nee 06-ba-03/c0).
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/releasenote.md b/releasenote.md
+index 399d76b..429105c 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -42,7 +42,7 @@
+ | ADL            | C0       | 06-bf-05/07 | 0000002c | 0000002e | Core Gen12
+ | ADL            | L0       | 06-9a-03/80 | 0000042a | 0000042c | Core Gen12
+ | ADL            | L0       | 06-9a-04/80 | 0000042a | 0000042c | Core Gen12
+-| ADL-N          | A0       | 06-be-00/11 |          | 00000011 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
++| ADL-N          | A0       | 06-be-00/11 | 00000010 | 00000011 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ | AML-Y22        | H0       | 06-8e-09/10 | 000000f2 | 000000f4 | Core Gen8 Mobile
+ | AML-Y42        | V0       | 06-8e-0c/94 | 000000f6 | 000000f8 | Core Gen10 Mobile
+ | CFL-H          | R0       | 06-9e-0d/22 | 000000f8 | 000000fa | Core Gen9 Mobile
+@@ -67,9 +67,9 @@
+ | KBL-U23e       | J1       | 06-8e-09/c0 | 000000f2 | 000000f4 | Core Gen7 Mobile
+ | KBL-U/Y        | H0       | 06-8e-09/c0 | 000000f2 | 000000f4 | Core Gen7 Mobile
+ | RKL-S          | B0       | 06-a7-01/02 | 00000058 | 00000059 | Core Gen11
+-| RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 |          | 00004119 | Core Gen13
++| RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 | 00004112 | 00004119 | Core Gen13
+ | RPL-S          | B0       | 06-b7-01/32 | 00000113 | 00000119 | Core Gen13
+-| RPL-U 2+8      | Q0       | 06-ba-03/e0 |          | 00004119 | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/e0 | 00004112 | 00004119 | Core Gen13
+ | SKX-D          | H0       | 06-55-04/b7 | 02006f05 | 02007006 | Xeon D-21xx
+ | SKX-SP         | B1       | 06-55-03/97 | 01000171 | 01000181 | Xeon Scalable
+ | SKX-SP         | H0/M0/U0 | 06-55-04/b7 | 02006f05 | 02007006 | Xeon Scalable
+-- 
+2.13.6
+
