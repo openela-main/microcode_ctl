@@ -1,0 +1,7 @@
+path intel-ucode/*
+vendor GenuineIntel
+## It is deemed that blacklisting all 06-[89]e-0x models on all hardware
+## in cases where no model filter is used is too broad, hence
+## no-model-mode=success.
+dmi mode=fail-equal no-model-mode=success key=bios_vendor val="Dell Inc."
+dependency required intel

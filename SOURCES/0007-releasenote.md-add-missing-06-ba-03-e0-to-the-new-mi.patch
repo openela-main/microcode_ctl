@@ -1,0 +1,39 @@
+From f1efbc4f0c75b61a3bba15267471ed305732786b Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 22 Aug 2023 16:48:54 +0200
+Subject: [PATCH 07/10] releasenote.md: add missing 06-ba-03/e0 to the new
+ microcode section
+
+microcode-20230808 release notes for CPUIDs 06-ba-02/e0 (RPL-H/P/PX 6+8),
+06-ba-03/e0 (RPL-U 2+8), and 06-be-00/11 (ADL-N) are peculiar in a way
+that these CPUIDs have their PF mask values changed (from 06-ba-02/c0,
+06-ba-03/c0, and 06-be-00/01, respectively).  Since 06-ba-02/e0 and
+06-be-00/11 are listed both in "New Platforms" and "Updated Platforms"
+sections (which makes some sense, as it is both addition of the platform
+0x10 and update for the rest of the platforms), it is natural to assume
+that this is done this way on purpose, and that 06-ba-03/e0 of these three
+is accidentally missing from the "New Platforms" section.
+
+* releasenote.md (microcode-20230808) <New Platforms>: Add 06-ba-03/e0
+(RPL-U 2+8) entry.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/releasenote.md b/releasenote.md
+index 3e0e786..e86759f 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -30,6 +30,7 @@
+ |:---------------|:---------|:------------|:---------|:---------|:---------
+ | ADL-N          | A0       | 06-be-00/11 |          | 00000011 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ | RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 |          | 00004119 | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/e0 |          | 00004119 | Core Gen13
+ 
+ ### Updated Platforms
+ 
+-- 
+2.13.6
+
