@@ -1,0 +1,204 @@
+Some Dell systems that use some models of Intel CPUs are susceptible to hangs
+and system instability during or after microcode update to revision 0xc6/0xca
+(included as part of microcode-20191113/microcode-20191115 update that addressed
+CVE-2019-0117, CVE-2019-0123, CVE-2019-11135, and CVE-2019-11139)
+and/or revision 0xd6 (included as part of microcode-20200609 update
+that addressed CVE-2020-0543, CVE-2020-0548, and CVE-2020-0549)
+[1][2][3][4][5][6].  In order to address this, microcode update to the newer
+revision has been disabled by default on these systems, and the previously
+published microcode revisions 0xae/0xb4/0xb8 are used by default
+for the OS-driven microcode update.
+
+[1] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/23
+[2] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/24
+[3] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/33
+[4] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/34
+[5] https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/35
+[6] https://bugzilla.redhat.com/show_bug.cgi?id=1846097
+
+This caveat contains revision 0xca of 06-[89]e-0x microcode publicly released
+by Intel; for the latest revision of the microcode files, please refer to caveat
+06-8e-9e-0x-dell.
+
+For the reference, microarchitectures of the affected CPU models:
+ * Amber Lake-Y
+ * Kaby Lake-G/H/S/U/Y/Xeon E3
+ * Coffee Lake-H/S/U/Xeon E
+ * Comet Lake-U 4+2
+ * Whiskey Lake-U
+
+Family names of the affected CPU models:
+ * 7th Generation Intel® Core™ Processor Family
+ * 8th Generation Intel® Core™ Processor Family
+ * 9th Generation Intel® Core™ Processor Family
+ * 10th Generation Intel® Core™ Processor Family (selected models)
+ * Intel® Celeron® Processor G Series
+ * Intel® Celeron® Processor 5000 Series
+ * Intel® Core™ X-series Processors (i7-7740X, i5-7640X only)
+ * Intel® Pentium® Gold Processor Series
+ * Intel® Pentium® Processor Series (selected models)
+ * Intel® Xeon® Processor E Family
+ * Intel® Xeon® Processor E3 v6 Family
+
+SHA1 checksums of the microcode files containing microcode revisions
+in question:
+ * 06-8e-09, revision 0xb4: e253c95c29c3eef6576db851dfa069d82a91256f
+ * 06-8e-0a, revision 0xb4: 45bcba494be07df9eeccff9627578095a97fba4d
+ * 06-8e-0b, revision 0xb8: 3e54bf91d642ad81ff07fe274d0cfb5d10d09c43
+ * 06-8e-0c, revision 0xb8: bf635c87177d6dc4e067ec11e1caeb19d3c325f0
+ * 06-9e-09, revision 0xb4: 42f68eec4ddb79dd6be0c95c4ce60e514e4504b1
+ * 06-9e-0a, revision 0xb4: 37c7cb394dd36610b57943578343723da67d50f0
+ * 06-9e-0b, revision 0xb4: b5399109d0a5ce8f5fb623ff942da0322b438b95
+ * 06-9e-0c, revision 0xae: 131bce89e4d210de8322ffbc6bd787f1af66a7df
+ * 06-9e-0d, revision 0xb8: 22511b007d1df55558d115abb13a1c23ea398317
+
+ * 06-8e-09, revision 0xca: 9afa1bae40995207afef13247f114be042d88083
+ * 06-8e-0a, revision 0xca: 1d90291cc25e17dc6c36c764cf8c06b41fed4c16
+ * 06-8e-0b, revision 0xca: 3fb1246a6594eff5e2c2076c63c600d734f10777
+ * 06-8e-0c, revision 0xca: e871540671f59b4fa5d0d454798f09a4d412aace
+ * 06-9e-09, revision 0xca: b5eed11108ab7ac1e675fe75d0e7454a400ddd35
+ * 06-9e-0a, revision 0xca: e472304aaa2f3815a32822cb111ab3f43bf3dfe4
+ * 06-9e-0b, revision 0xca: 78f47c5162da680878ed057dc7c853f9737c524b
+ * 06-9e-0c, revision 0xca: f23848a009928796a153cb9e8f44522136969408
+ * 06-9e-0d, revision 0xca: c7a3d469469ee828ba9faf91b67af881fceec3b7
+
+ * 06-8e-09, revision 0xd6: 2272c621768437d20e602207752201e0966e5a8c
+ * 06-8e-0a, revision 0xd6: 0b145afb88e028e612f04c2a86385e7d7c3fefc4
+ * 06-8e-0b, revision 0xd6: c3831b05da83be54f3acc451a1bce90f75e2e9e5
+ * 06-8e-0c, revision 0xd6: 4b8938a93e23f4b5a2d9de40b87f6afcfdc27c05
+ * 06-9e-09, revision 0xd6: 4bacba8c598508e7dd4e87e179586abe7a1a987f
+ * 06-9e-0a, revision 0xd6: 4c236afeef9f80ff3a286698fe7cef72926722f0
+ * 06-9e-0b, revision 0xd6: 2f9ab9b2ba29559ce177632281d7290a24fed2ef
+ * 06-9e-0c, revision 0xd6: 4b9059e519bcab6085b6c103f5d99e509fe0b2bb
+ * 06-9e-0d, revision 0xd6: 3a3b7edfd8126bb34b761b46a32102a622047899
+
+ * 06-8e-09, revision 0xde: 84d7514101eb8904834a3dacdee684b3c574245f
+ * 06-8e-0a, revision 0xe0: 080b9e3ebbcf6bb1eca0fb5f640e6bfbfe3a1e6e
+ * 06-8e-0b, revision 0xde: 80fed976231bbff4c7103e373498e07eef0bff31
+ * 06-8e-0c, revision 0xde: 84f160587fea4acb81451c8ff53dc51afba06343
+ * 06-9e-09, revision 0xde: 422026ffb2cca446693c586be98d0d9e7dfeb116
+ * 06-9e-0a, revision 0xde: b6c44b9fe26e1d6bafa27f37ffe010284294bf1c
+ * 06-9e-0b, revision 0xde: 6452937a0d359066b95f9e679a41a15490770312
+ * 06-9e-0c, revision 0xde: a95021a4e497e0bf3691ecf3d020728f25a3f542
+ * 06-9e-0d, revision 0xde: 03b20fdc2fa3f9586f93a7e40d3b61be5b7b788c
+
+ * 06-8e-09, revision 0xea: caa7192fb2223e3e52389aca84930aee326b384d
+ * 06-8e-0a, revision 0xea: ab4d5d3b51445d055763796a0362f8ab249cf4c8
+ * 06-8e-0b, revision 0xea: 5406c513f90286c02476ee0d4a6c8010a263c3ac
+ * 06-8e-0c, revision 0xea: 8c045b9056443862c95573efd4646e331a2310d3
+ * 06-9e-09, revision 0xea: a9f8a14ca3808f6380d6dff92e1fd693cc909668
+ * 06-9e-0a, revision 0xea: b7726bdba2fe74d8f419c68f417d796d569b9ec4
+ * 06-9e-0b, revision 0xea: 963dca66aedf2bfb0613d0d9515c6bcfb0589e0c
+ * 06-9e-0c, revision 0xea: 1329a4d8166fe7d70833d21428936254e11efbb4
+ * 06-9e-0d, revision 0xea: 9c73f2ac6c4edbf8b0aefdd5d6780c7219be702a
+
+ * 06-8e-09, revision 0xec: 78eb624be5e8084e438318bdad99f9ddc082def7
+ * 06-8e-0a, revision 0xec: 6c41a6ad412f48f81a9d5edf59dcdecc358398bf
+ * 06-8e-0b, revision 0xec: 89dd0de598c83eb9714f6839499f322dfce2b693
+ * 06-8e-0c, revision 0xec: 225ea349b9cb3b1b94e237deb797e0c60d14a84c
+ * 06-9e-09, revision 0xec: fc5c0206fe392a0ddad4dc9363fde2d3e3d1e681
+ * 06-9e-0a, revision 0xec: 128002076e4ac3c75697fb4efdf1f8ddcc971fbe
+ * 06-9e-0b, revision 0xec: ac8c3865a143b2e03869f15a5b86e560f60ad632
+ * 06-9e-0c, revision 0xec: 6e3d695290def517857c8e743dc65161479f0c04
+ * 06-9e-0d, revision 0xec: 58b1ec5fee7dd1a761ed901b374ccb978737a979
+
+ * 06-8e-09, revision 0xf0: 219e2b9168a09451b17813b97995cc59cc78b414
+ * 06-8e-0a, revision 0xf0: 3c4241d0b9d1a1a1e82d03b365fdd3b843006a7c
+ * 06-8e-0b, revision 0xf0: 79b61f034cba86e61641114bbab49ec0166c0f35
+ * 06-8e-0c, revision 0xf0: 11d166de440dbe9c440e90cb610ef4b9d48242b1
+ * 06-9e-09, revision 0xf0: 49e142da74e7298b2db738ff7dd1a9b0fa4e0c3e
+ * 06-9e-0a, revision 0xf0: 8de1d4a80cd683bf09854c33905c69d3d7ac7730
+ * 06-9e-0b, revision 0xf0: ff092c6ac8333f0abcd94f7d2e2088f31d960e62
+ * 06-9e-0c, revision 0xf0: 3702f21e87b75bea6f4b1ee0407b941ef31d4ad1
+ * 06-9e-0d, revision 0xf0: 226feaaa431eb76e734ab68efc2ea7b07aa3c7d9
+
+ * 06-8e-0c, revision 0xf4: 6a5e140bf8c046acb6958bad1db1fee66c8601ad
+ * 06-9e-0d, revision 0xf4: 3433d4394b05a9c8aefb9c46674bad7b7e934f11
+
+ * 06-8e-09, revision 0xf2: 2e67e55d7b805edcfaac57898088323df7315b25
+ * 06-8e-0a, revision 0xf2: f9e1dbeb969ded845b726c62336f243099714bcf
+ * 06-8e-0b, revision 0xf2: 3d45fbcbefd92dbbedf0eed04aeb29c7430c7c0e
+ * 06-8e-0c, revision 0xf6: bd37be38dbd046d4d66f126cfaa79e43bfe88c0d
+ * 06-9e-09, revision 0xf2: 716257544acf2c871d74e4627e7de86ee1024185
+ * 06-9e-0a, revision 0xf2: 933c5d6710195336381e15a160d36aaa52d358fd
+ * 06-9e-0b, revision 0xf2: 92eaafdb72f6d4231046aadb92caa0038e94fca8
+ * 06-9e-0c, revision 0xf2: ad8922b4f91b5214dd88c56c0a12d15edb9cea5b
+ * 06-9e-0d, revision 0xf8: 8fdea727c6ce46b26e0cffa6ee4ff1ba0c45cf14
+
+ * 06-8e-09, revision 0xf4: e059ab6b168f3831d624acc153e18ab1c8488570
+ * 06-8e-0a, revision 0xf4: d1ade1ccfe5c6105d0786dfe887696808954f8b4
+ * 06-8e-0b, revision 0xf4: 0bc93736f3f5b8b6569bebac4e9627ab923621e0
+ * 06-8e-0c, revision 0xf8: be93b4826a3f40219a9fc4fc5afa87b320279f6e
+ * 06-9e-09, revision 0xf4: 317564f3ac7b99b5900b91e2be3e23b9b66bc2c0
+ * 06-9e-0a, revision 0xf4: 9659f73e2c6081eb5c146c5ed763fa5db21df901
+ * 06-9e-0b, revision 0xf4: e60b567ad54da129d05a77e305cae4488579979d
+ * 06-9e-0c, revision 0xf4: 74d52a11a905dd7b254fa72b014c3bab8022ba3d
+ * 06-9e-0d, revision 0xfa: 484738563e793d5b90b94869dc06edf0407182f1
+
+Please contact your system vendor for a BIOS/firmware update that contains
+the latest microcode version.  For the information regarding microcode versions
+required for mitigating specific side-channel cache attacks, please refer
+to the following knowledge base articles:
+ * CVE-2017-5715 ("Spectre"):
+   https://access.redhat.com/articles/3436091
+ * CVE-2018-3639 ("Speculative Store Bypass"):
+   https://access.redhat.com/articles/3540901
+ * CVE-2018-3620, CVE-2018-3646 ("L1 Terminal Fault Attack"):
+   https://access.redhat.com/articles/3562741
+ * CVE-2018-12130, CVE-2018-12126, CVE-2018-12127, and CVE-2019-11091
+   ("Microarchitectural Data Sampling"):
+   https://access.redhat.com/articles/4138151
+ * CVE-2019-0117 (Intel SGX Information Leak),
+   CVE-2019-0123 (Intel SGX Privilege Escalation),
+   CVE-2019-11135 (TSX Asynchronous Abort),
+   CVE-2019-11139 (Voltage Setting Modulation):
+   https://access.redhat.com/solutions/2019-microcode-nov
+ * CVE-2020-0543 (Special Register Buffer Data Sampling),
+   CVE-2020-0548 (Vector Register Data Sampling),
+   CVE-2020-0549 (L1D Cache Eviction Sampling):
+   https://access.redhat.com/solutions/5142751
+ * CVE-2020-8695 (Information disclosure issue in Intel SGX via RAPL interface),
+   CVE-2020-8696 (Vector Register Leakage-Active),
+   CVE-2020-8698 (Fast Forward Store Predictor):
+   https://access.redhat.com/articles/5569051
+ * CVE-2020-24489 (VT-d-related Privilege Escalation),
+   CVE-2020-24511 (Improper Isolation of Shared Resources),
+   CVE-2020-24512 (Observable Timing Discrepancy),
+   CVE-2020-24513 (Information Disclosure on Some Intel Atom Processors):
+   https://access.redhat.com/articles/6101171
+ * CVE-2021-0127 (Intel Processor Breakpoint Control Flow):
+   https://access.redhat.com/articles/6716541
+ * CVE-2022-0005 (Informational disclosure via JTAG),
+   CVE-2022-21123 (Shared Buffers Data Read),
+   CVE-2022-21125 (Shared Buffers Data Sampling),
+   CVE-2022-21127 (Update to Special Register Buffer Data Sampling),
+   CVE-2022-21151 (Optimization Removal-Induced Informational Disclosure),
+   CVE-2022-21166 (Device Register Partial Write):
+   https://access.redhat.com/articles/6963124
+
+The information regarding disabling microcode update is provided below.
+
+To disable usage of the newer microcode revision for a specific kernel
+version, please create a file "disallow-intel-06-8e-9e-0x-0xca" inside
+/lib/firmware/<kernel_version> directory, run
+"/usr/libexec/microcode_ctl/update_ucode" to update firmware directory
+used for late microcode updates, and run "dracut -f --kver <kernel_version>"
+so initramfs for this kernel version is regenerated, for example:
+
+    touch /lib/firmware/3.10.0-862.9.1/disallow-intel-06-8e-9e-0x-0xca
+    /usr/libexec/microcode_ctl/update_ucode
+    dracut -f --kver 3.10.0-862.9.1
+
+To disable usage of the newer microcode revision for all kernels, please create
+file "/etc/microcode_ctl/ucode_with_caveats/disallow-intel-06-8e-9e-0x-0xca",
+run "/usr/libexec/microcode_ctl/update_ucode" to update firmware directories
+used for late microcode updates, and run "dracut -f --regenerate-all"
+so initramfs images get regenerated, for example:
+
+    mkdir -p /etc/microcode_ctl/ucode_with_caveats
+    touch /etc/microcode_ctl/ucode_with_caveats/disallow-intel-06-8e-9e-0xca
+    /usr/libexec/microcode_ctl/update_ucode
+    dracut -f --regenerate-all
+
+Please refer to /usr/share/doc/microcode_ctl/README.caveats for additional
+information.

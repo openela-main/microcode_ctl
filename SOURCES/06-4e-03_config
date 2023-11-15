@@ -1,0 +1,4 @@
+model GenuineIntel 06-4e-03
+path intel-ucode/06-4e-03
+dependency required intel
+disable early late

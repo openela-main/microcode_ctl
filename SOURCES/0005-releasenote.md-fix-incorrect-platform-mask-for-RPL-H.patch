@@ -1,0 +1,99 @@
+From 437827acd9e8b7ce9b989614e32ea798cdb0b6d8 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Thu, 10 Aug 2023 18:48:58 +0200
+Subject: [PATCH 05/10] releasenote.md: fix incorrect platform mask for
+ RPL-H/P/U
+
+microcode-20230214, microcode-20230512, and microcode-20230512-rev2
+release notes state that the platform mask for CPUIDs with FF-MM-SS
+06-ba-02 and 06-ba-03 is 0x07, but it is, in fact, 0xc0:
+
+    $ iucode_tool -L microcode-20230{214,512,512-rev2}/intel-ucode/06-ba-0[23]
+    microcode bundle 1: microcode-20230214/intel-ucode/06-ba-02
+      001/001: sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e
+               sig 0x000b06a3, pf_mask 0xc0, 2022-12-08, rev 0x410e
+    microcode bundle 2: microcode-20230214/intel-ucode/06-ba-03
+      002/001: sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2022-12-08, rev 0x410e
+               sig 0x000b06a3, pf_mask 0xc0, 2022-12-08, rev 0x410e
+    microcode bundle 3: microcode-20230512/intel-ucode/06-ba-02
+      003/001: sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112
+               sig 0x000b06a3, pf_mask 0xc0, 2023-02-22, rev 0x4112
+    microcode bundle 4: microcode-20230512/intel-ucode/06-ba-03
+      004/001: sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112
+               sig 0x000b06a3, pf_mask 0xc0, 2023-02-22, rev 0x4112
+    microcode bundle 5: microcode-20230512-rev2/intel-ucode/06-ba-02
+      005/001: sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112
+               sig 0x000b06a3, pf_mask 0xc0, 2023-02-22, rev 0x4112
+    microcode bundle 6: microcode-20230512-rev2/intel-ucode/06-ba-03
+      006/001: sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112, size 212992
+               sig 0x000b06a2, pf_mask 0xc0, 2023-02-22, rev 0x4112
+               sig 0x000b06a3, pf_mask 0xc0, 2023-02-22, rev 0x4112
+
+Also, fix incorrect RPL-U stepping in the microcode-20230214 table.
+
+* releasenote.md (microcode-20230214, microcode-20230512,
+microcode-20230512-rev2) <RPL-H 6+8, RPL-P 6+8>: Change the F-M-S field
+from 06-ba-02/07 to 06-ba-02/c0.
+(microcode-20230214) <RPL-U 2+8>: Change the F-M-S field from 06-ba-02/07
+to 06-ba-03/c0.
+(microcode-20230512, microcode-20230512-rev2) <RPL-U 2+8>: Change the F-M-S
+field from 06-ba-03/07 to 06-ba-03/c0.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/releasenote.md b/releasenote.md
+index c43469f..a29889e 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -144,10 +144,10 @@
+ | KBL-U/Y        | H0       | 06-8e-09/c0 | 000000f0 | 000000f2 | Core Gen7 Mobile
+ | LKF            | B2/B3    | 06-8a-01/10 | 00000032 | 00000033 | Core w/Hybrid Technology
+ | RKL-S          | B0       | 06-a7-01/02 | 00000057 | 00000058 | Core Gen11
+-| RPL-H 6+8      | J0       | 06-ba-02/07 | 0000410e | 00004112 | Core Gen13
+-| RPL-P 6+8      | J0       | 06-ba-02/07 | 0000410e | 00004112 | Core Gen13
++| RPL-H 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
++| RPL-P 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
+ | RPL-S          | S0       | 06-b7-01/32 | 00000112 | 00000113 | Core Gen13
+-| RPL-U 2+8      | Q0       | 06-ba-03/07 | 0000410e | 00004112 | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/c0 | 0000410e | 00004112 | Core Gen13
+ | SKX-D          | H0       | 06-55-04/b7 | 02006e05 | 02006f05 | Xeon D-21xx
+ | SKX-SP         | B1       | 06-55-03/97 | 01000161 | 01000171 | Xeon Scalable
+ | SKX-SP         | H0/M0/U0 | 06-55-04/b7 | 02006e05 | 02006f05 | Xeon Scalable
+@@ -210,10 +210,10 @@
+ | KBL-U/Y        | H0       | 06-8e-09/c0 |          | 000000f2 | Core Gen7 Mobile
+ | LKF            | B2/B3    | 06-8a-01/10 | 00000032 | 00000033 | Core w/Hybrid Technology
+ | RKL-S          | B0       | 06-a7-01/02 | 00000057 | 00000058 | Core Gen11
+-| RPL-H 6+8      | J0       | 06-ba-02/07 | 0000410e | 00004112 | Core Gen13
+-| RPL-P 6+8      | J0       | 06-ba-02/07 | 0000410e | 00004112 | Core Gen13
++| RPL-H 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
++| RPL-P 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
+ | RPL-S          | S0       | 06-b7-01/32 | 00000112 | 00000113 | Core Gen13
+-| RPL-U 2+8      | Q0       | 06-ba-03/07 | 0000410e | 00004112 | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/c0 | 0000410e | 00004112 | Core Gen13
+ | SKX-D          | H0       | 06-55-04/b7 |          | 02006f05 | Xeon D-21xx
+ | SKX-SP         | B1       | 06-55-03/97 | 01000161 | 01000171 | Xeon Scalable
+ | SKX-SP         | H0/M0/U0 | 06-55-04/b7 |          | 02006f05 | Xeon Scalable
+@@ -249,9 +249,9 @@
+ | SPR-SP         | E4       | 06-8f-07/87 |          | 2b000181 | Xeon Scalable Gen4
+ | SPR-SP         | E5       | 06-8f-08/87 |          | 2b000181 | Xeon Scalable Gen4
+ | SPR-HBM        | B3       | 06-8f-08/10 |          | 2c000170 | Xeon Max
+-| RPL-P 6+8      | J0       | 06-ba-02/07 |          | 0000410e | Core Gen13
+-| RPL-H 6+8      | J0       | 06-ba-02/07 |          | 0000410e | Core Gen13
+-| RPL-U 2+8      | Q0       | 06-ba-02/07 |          | 0000410e | Core Gen13
++| RPL-P 6+8      | J0       | 06-ba-02/c0 |          | 0000410e | Core Gen13
++| RPL-H 6+8      | J0       | 06-ba-02/c0 |          | 0000410e | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/c0 |          | 0000410e | Core Gen13
+ 
+ ### Updated Platforms
+ 
+-- 
+2.13.6
+
