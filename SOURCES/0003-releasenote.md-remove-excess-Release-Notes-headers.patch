@@ -1,0 +1,69 @@
+From 0e9a73d4b67fc47c651e81c4dd0c4705c9371a72 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 22 Aug 2023 19:50:43 +0200
+Subject: [PATCH 03/10] releasenote.md: remove excess "Release Notes" headers
+
+Starting with microcode-20220809, the first-level "Release Notes" header
+is duplicated for unknown reason;  remove it, as it does not make sense
+to have it multiple times in the middle of the document, consider the
+fact that first-level header is usually reserved for the document name
+(and it seems that it indeed bears that role).
+
+* releasenote.md: Remove all "Release Notes" headers after the first
+one.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/releasenote.md b/releasenote.md
+index cfd5b27..492d1d4 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -86,7 +86,6 @@
+ | RPL-U 2+8      | Q0       | 06-ba-03/e0 |          | 00004119 | Core Gen13
+ 
+ 
+-# Release Notes
+ ## [microcode-20230512-rev2](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20230512-rev2)
+ 
+ ### Purpose
+@@ -166,7 +165,7 @@
+ | WHL-U          | V0       | 06-8e-0c/94 | 000000f4 | 000000f6 | Core Gen8 Mobile
+ | WHL-U          | W0       | 06-8e-0b/d0 | 000000f0 | 000000f2 | Core Gen8 Mobile
+ 
+-# Release Notes
++
+ ## [microcode-20230512](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20230512)
+ 
+ ### Functional Updates
+@@ -233,7 +232,6 @@
+ | WHL-U          | W0       | 06-8e-0b/d0 |          | 000000f2 | Core Gen8 Mobile
+ 
+ 
+-# Release Notes
+ ## [microcode-20230214](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20230214)
+ 
+ ### Purpose
+@@ -279,7 +277,7 @@
+ | RPL-S          | S0       | 06-b7-01/32 | 0000010e | 00000112 | Core Gen13
+ | SKX-SP         | B1       | 06-55-03/97 | 0100015e | 01000161 | Xeon Scalable
+ 
+-# Release Notes
++
+ ## [microcode-20221108](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20221108)
+ 
+ ### Purpose
+@@ -328,7 +326,7 @@
+ 
+ None
+ 
+-# Release Notes
++
+ ## [microcode-20220809](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20220809)
+ 
+ ### Purpose
+-- 
+2.13.6
+

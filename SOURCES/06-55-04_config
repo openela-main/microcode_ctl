@@ -1,0 +1,12 @@
+model GenuineIntel 06-55-04
+path intel-ucode/06-55-04
+## Bug https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/21
+## affects only SKX-W/X (Workstation and HEDT segments); product segment
+## can be determined by checking bits 5..3 of the CAPID0 field in PCU registers
+## device (see https://www.intel.com/content/dam/www/public/us/en/documents/specification-updates/xeon-scalable-spec-update.pdf#page=13
+## for Server/FPGA/Fabric segments description; for SKX-W/X no public
+## documentation seems to be available).  Specific device/function numbers
+## are provided for speeding up the search only, VID:DID is the real selector.
+## Commented out since revision 0x2006906 seems to fix the issue.
+#pci_config_val mode=success-all device=0x1e function=3 vid=0x8086 did=0x2083 offset=0x84 size=4 mask=0x38 val=0x38,0x18,0x8
+dependency required intel
