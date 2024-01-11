@@ -1,0 +1,5 @@
+Microcode revisions 0xda and higher for Intel Skylake-H/S/Xeon E3 v5 (family 6,
+model 94, stepping 3; CPUID 0x506e3) are disabled as they may cause system
+instability; the previously published revision 0xd6 is used instead.
+Please refer to /usr/share/doc/microcode_ctl/caveats/06-5e-03_readme
+and /usr/share/doc/microcode_ctl/README.caveats for details.

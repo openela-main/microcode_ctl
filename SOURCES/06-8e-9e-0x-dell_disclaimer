@@ -1,0 +1,7 @@
+Some Dell systems that use some models of Intel CPUs are susceptible to hangs
+and system instability during or after microcode update to newer revisions.
+In order to address this, microcode update to these newer revision
+has been disabled by default on these systems, and the previously published
+microcode revisions are used by default for the OS-driven microcode update.
+Please refer to /usr/share/doc/microcode_ctl/caveats/06-8e-9e-0x-dell_readme
+and /usr/share/doc/microcode_ctl/README.caveats for details.

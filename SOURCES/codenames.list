@@ -1,0 +1,345 @@
+# format=extended
+# SPDX-License-Identifier: CC0-1.0
+# Segment; Unused; Codename; Stepping; PF; CPUID; Abbreviation; Variant(s); Families; Models
+
+Server;;Pentium Pro;B0;00;611;;;Pentium Pro;
+Server;;Pentium Pro;C0;00;612;;;Pentium Pro;
+Server;;Pentium Pro;sA0;00;616;;;Pentium Pro;
+Server;;Pentium Pro;sA1;00;617;;;Pentium Pro;
+Server;;Pentium Pro;sB1;00;619;;;Pentium Pro;
+Desktop;;Klamath (PII);C0;ff;633;;;Pentium II;
+Desktop;;Klamath (PII);C1;ff;634;;;Pentium II;
+Desktop;;Deschutes SEPP (PII);A0;01;650;;;Celeron;
+Mobile;;Deschutes Mini-Cart (PII);A0;02;650;;;Pentium II Mobile;
+Server;;Deschutes SECC (PII);A0;04;650;;;Pentium II Xeon;
+Mobile;;Deschutes MMC1/MMC2 (PII);A0;08;650;;;Pentium II Mobile;
+Mobile;;Deschutes Micro-PGA1 (PII);A0;20;650;;;Pentium II Mobile;
+Mobile;;Deschutes (PII);A0;80;650;;;Pentium II Mobile;
+Desktop;;Deschutes SECC/SECC2 (PII);A1;01;651;;;Celeron;
+Desktop;;Deschutes SEPP (PII);A1;01;651;;;Celeron;
+Mobile;;Deschutes Mini-Cart (PII);A1;02;651;;;Pentium II Mobile;
+Mobile;;Deschutes MMC1/MMC2 (PII);A1;08;651;;;Pentium II Mobile;
+Desktop;;Deschutes SECC/SECC2 (PII);B0;01;652;;;Pentium II;
+Mobile;;Deschutes Mini-Cart (PII);B0;02;652;;;Pentium II Mobile;
+Server;;Deschutes SECC (PII);B0;04;652;;;Pentium II Xeon;
+Mobile;;Deschutes MMC1/MMC2 (PII);B0;08;652;;;Pentium II Mobile;
+Desktop;;Deschutes SECC/SECC2 (PII);B1;01;653;;;Pentium II;
+Mobile;;Deschutes Mini-Cart (PII);B1;02;653;;;Pentium II Mobile;
+Server;;Deschutes SECC (PII);B1;04;653;;;Pentium II Xeon;
+Mobile;;Deschutes MMC1/MMC2 (PII);B1;08;653;;;Pentium II Mobile;
+Desktop;;Mendocino SEPP (PII);A0;01;660;;;Celeron;
+Desktop;;Mendocino PPGA (PII);B0;10;665;;;Celeron;
+Mobile;;Dixon Mini-Cart (PII);A1;02;66a;;;Pentium II Mobile;
+Mobile;;Dixon MMC1/MMC2 (PII);A1;08;66a;;;Pentium II Mobile, Celeron Mobile;
+Mobile;;Dixon Micro-PGA1 (PII);A1;20;66a;;;Pentium II Mobile, Celeron Mobile;
+Mobile;;Dixon Mini-Cart (PII);A1;02;66d;;;Pentium II Mobile;
+Mobile;;Dixon MMC1/MMC2 (PII);A1;08;66d;;;Pentium II Mobile;
+Mobile;;Dixon Micro-PGA1 (PII);A1;20;66d;;;Pentium II Mobile;
+Desktop;;Katmai SECC/SECC2 (PIII);B0;01;671;;;Pentium III;
+Server;;Tanner SECC (PIII);B0;04;671;;;Pentium III Xeon;
+Desktop;;Katmai SECC/SECC2 (PIII);B0;01;672;;;Pentium III;
+Server;;Tanner SECC (PIII);B0;04;672;;;Pentium III Xeon;
+Desktop;;Katmai SECC/SECC2 (PIII);C0;01;673;;;Pentium III;
+Server;;Tanner SECC (PIII);C0;04;673;;;Pentium III Xeon;
+Desktop;;Coppermine SECC/SECC2 (PIII);A2;01;681;;;Pentium III;
+Server;;Cascades SECC (PIII);A2;04;681;;;Pentium III Xeon;
+Mobile;;Coppermine MMC2 (PIII);A2;08;681;;;Pentium III Mobile;
+Desktop;;Coppermine FC-PGA (PIII);A2;10;681;;;Pentium III;
+Mobile;;Coppermine Micro-PGA2 (PIII);A2;20;681;;;Pentium III Mobile;
+Desktop;;Coppermine SECC/SECC2 (PIII);B0;01;683;;;Pentium III;
+Server;;Cascades SECC (PIII);B0;04;683;;;Pentium III Xeon;
+Mobile;;Coppermine MMC2 (PIII);B0;08;683;;;Pentium III Mobile;
+Desktop;;Coppermine FC-PGA (PIII);B0;10;683;;;Pentium III;
+Mobile;;Coppermine Micro-PGA2 (PIII);B0;20;683;;;Pentium III Mobile;
+Desktop;;Coppermine SECC/SECC2 (PIII);C0;01;686;;;Pentium III;
+Mobile;;Coppermine (PIII);C0;02;686;;;Pentium III Mobile;
+Server;;Cascades SECC (PIII);C0;04;686;;;Pentium III Xeon;
+Mobile;;Coppermine MMC2 (PIII);C0;08;686;;;Pentium III Mobile;
+Desktop;;Coppermine FC-PGA (PIII);C0;10;686;;;Pentium III;
+Mobile;;Coppermine Micro-PGA2 (PIII);C0;20;686;;;Pentium III Mobile;
+Desktop;;Coppermine FC-PGA2 (PIII);C0;20;686;;;Pentium III;
+Desktop;;Coppermine (PIII);C0;80;686;;;Pentium III;
+Desktop;;Coppermine (PIII);D0;ff;68a;;;Pentium III;
+Mobile;;Banias (P-M);B1;b0;695;;;Pentium M, Celeron M;
+Server;;Cascades (PIII);A0;04;6a0;;;Pentium III Xeon;
+Server;;Cascades (PIII);A1;04;6a1;;;Pentium III Xeon;
+Server;;Cascades (PIII);B0;04;6a4;;;Pentium III Xeon;
+Desktop;;Tualatin FC-PGA2 (PIII);A0;10;6b0;;;Pentium III;
+Desktop;;Tualatin FC-PGA2 (PIII);A1;10;6b1;;;Pentium III;
+Mobile;;Tualatin Micro-PGA2 (PIII);A1;20;6b1;;;Pentium III Mobile;
+Desktop;;Tualatin FC-PGA2 (PIII);B1;10;6b4;;;Pentium III;
+Mobile;;Tualatin Micro-PGA2 (PIII);B1;20;6b4;;;Pentium III Mobile;
+Mobile;;Dothan (P-M);B0;20;6d6;;;Pentium M;
+Mobile;;Dothan (P-M);C0;20;6d8;;;Pentium M;
+Mobile;;Yonah;B0;20;6e4;;;Core Duo, Core Solo;
+Mobile;;Yonah;C0;20;6e8;;;Core Duo, Core Solo;
+Server;;Sossaman (Yonah);C0;00;6e8;;;Xeon LV;
+Mobile;;Yonah;E0;a0;6ec;;;Core Duo, Core Solo;
+Server;;Sossaman (Yonah);D0;00;6ec;;;Xeon LV, Xeon ULV;
+Mobile;;Yonah;M0;20;6ed;;;Core Duo Mobile;
+Desktop;;Conroe (Merom);L2;01;6f2;;;Core2 Duo E4xxx, E6xxx;
+Mobile;;Merom;L2;20;6f2;;;Core2 Duo Mobile;
+Server;;Conroe Xeon (Merom);L2;01;6f2;;;;Xeon 3040, 3050
+Desktop;;Conroe (Merom);B0;01;6f4;;;Core2 Duo E4xxx, E6xxx;
+Server;;Woodcrest (Merom);B0;04;6f4;;;Xeon 51xx;
+Desktop;;Conroe (Merom);B2;01;6f6;;;Core2 Duo E4xxx, E6xxx;
+Mobile;;Merom;B2;20;6f6;;;Core2 Duo Mobile;
+Server;;Conroe Xeon (Merom);B2;01;6f6;;;;Xeon 3040, 3050, 3060, 3070
+Server;;Woodcrest (Merom);B2;04;6f6;;;;Xeon 5110, 5120, 5130, 5140, 5150, 5160, Xeon LV 5128, 5133, 5138, 5148
+Desktop;;Kentsfield (Merom);B3;10;6f7;;;;
+Server;;Kentsfield Xeon (Merom);B3;10;6f7;;;;Xeon X3210, X3220
+Server;;Clovertown (Merom);B3;40;6f7;;;;Xeon E5310, E5320, E5335, E5345, X5355, X5365, L5310, L5320
+Desktop;;Tigerton (Merom);E0;01;6f9;;;;
+Mobile;;Merom;E1;80;6fa;;;Core 2 Duo Mobile, Celeron Processor 500;
+Desktop;;Conroe (Merom);G0;01;6fb;;;;
+Desktop;;Kentsfield (Merom);G0;10;6fb;;;;
+Mobile;;Merom;G0;a0;6fb;;;;
+Server;;Conroe Xeon (Merom);G0;01;6fb;;;;Xeon 3065, 3075, 3085
+Server;;Woodcrest (Merom);G0;04;6fb;;;;Xeon 5110, 5120, 5130, 5140, 5150, 5160, Xeon LV 5113, 5128, 5133, 5138, 5148
+Server;;Tigerton (Merom);G0;08;6fb;;;;Xeon E7210, E7220, E7310, E7320, E7330, E7340, X7350, L7345
+Server;;Kentsfield Xeon (Merom);G0;10;6fb;;;;Xeon X3210, X3220, X3230
+Server;;Clovertown (Merom);G0;40;6fb;;;;Xeon E5310, E5320, E5335, E5345, X5355, X5365, L5310, L5318, L5320, L5335
+Desktop;;Conroe (Merom);M0;01;6fd;;;;
+Mobile;;Merom;M0;a0;6fd;;;;
+Desktop;;Willamette (NetBurst);B2;01;f07;;;Pentium 4 (Socket 423);
+Server;;Foster DP (NetBurst);B2;02;f07;;;Pentium 4 Xeon (Socket 603);
+Desktop;;Willamette (NetBurst);B2;04;f07;;;Pentium 4 (Willamette, Socket 478);
+Desktop;;Willamette (NetBurst);C1;01;f0a;;;Pentium 4 (Socket 423);
+Server;;Foster DP (NetBurst);C1;02;f0a;;;Pentium 4 Xeon (Socket 603);
+Desktop;;Willamette (NetBurst);C1;04;f0a;;;Pentium 4 (Willamette, Socket 478);
+Server;;Foster MP (NetBurst);C0;02;f11;;;Pentium 4 Xeon MP (Socket 603);
+Desktop;;Willamette (NetBurst);D0;01;f12;;;Pentium 4 (Socket 423);
+Server;;Foster DP (NetBurst);D0;02;f12;;;Pentium 4 Xeon (Socket 603);
+Desktop;;Willamette (NetBurst);D0;04;f12;;;Pentium 4 (Willamette, Socket 478);
+Desktop;;Willamette (NetBurst);E0;04;f13;;;Pentium 4 (Willamette, Socket 478), Celeron (Willamette, Socket 478);
+Server;;Prestonia (NetBurst);A0;02;f22;;;Pentium 4 Xeon MP (Socket 603);
+Desktop;;Northwood (NetBurst);B0;04;f24;;;Pentium 4 (Northwood);
+Mobile;;Northwood (NetBurst);B0;08;f24;;;Pentium 4-M;
+Mobile;;Northwood (NetBurst);B0;10;f24;;;Pentium 4 Mobile;
+Server;;Prestonia (NetBurst);B0;02;f24;;;Pentium 4 Xeon (Socket 603/604);
+Desktop;;Northwood (NetBurst);B1,M0;14;f25;;;Pentium 4 (Northwood);
+Server;;Prestonia (NetBurst);B1,M0;01;f25;;;Pentium 4 Xeon (Socket 603/604);
+Server;;Gallatin (NetBurst);B1;02;f25;;;Pentium 4 Xeon (Socket 603/604);
+Server;;Gallatin (NetBurst);B1;02;f26;;;Pentium 4 Xeon (Socket 603/604);
+Desktop;;Northwood (NetBurst);C1;04;f27;;;Pentium 4 (Northwood), Celeron (Northwood);
+Mobile;;Northwood (NetBurst);C1;08;f27;;;Pentium 4-M, Celeron Mobile;
+Server;;Prestonia (NetBurst);C1;02;f27;;;Pentium 4 Xeon (Socket 603/604);
+Desktop;;Northwood (NetBurst);D1;04;f29;;;Pentium 4 (Northwood), Celeron (Northwood);
+Mobile;;Northwood (NetBurst);D1;08;f29;;;Pentium 4-M, Celeron Mobile;
+Server;;Prestonia (NetBurst);D1;02;f29;;;Pentium 4 Xeon (Socket 603/604);
+Desktop;;Prescott (NetBurst);B1;0d;f32;;;Pentium 4 (Prescott);
+Desktop;;Prescott (NetBurst);C0;0d;f33;;;Pentium 4 (Prescott), Celeron D;
+Desktop;;Prescott (NetBurst);D0;1d;f34;;;Pentium 4 (Prescott), Celeron D;
+Server;;Nocona (NetBurst);D0;1d;f34;;;Pentium 4 (Prescott);
+Desktop;;Prescott (NetBurst);E0;bd;f41;;;Pentium 4 (Prescott), Celeron D;
+Server;;Protomac (NetBurst);C0;02;f41;;;Pentium 4 Xeon MP (Socket 604);
+Server;;Cranford (NetBurst);A0;bd;f41;;;Pentium 4 Xeon MP (Socket 604);
+Server;;Nocona (NetBurst);E0;bd;f41;;;Pentium 4 Xeon (Socket 604);
+Desktop;;Prescott (NetBurst);N0;9d;f43;;;Pentium 4 (Prescott);
+Server;;Irwindale (NetBurst);N0;9d;f43;;;Pentium 4 Xeon (Socket 604);
+Desktop;;Smithfield (NetBurst);A0;9d;f44;;;Pentium D 8x0 (Smithfield);
+Desktop;;Smithfield (NetBurst);B0;9d;f47;;;Pentium D 8x0 (Smithfield);
+Server;;Paxwille (NetBurst);A0;01;f48;;;Pentium 4 Dual-Core Xeon 70xx;
+Server;;Paxwille (NetBurst);A0;02;f48;;;Pentium 4 Dual-Core Xeon MP 70xx;
+Desktop;;Prescott (NetBurst);G1;bd;f49;;;Pentium 4 (Prescott), Celeron D;
+Server;;Cranford (NetBurst);B0;bd;f49;;;Pentium 4 Xeon MP (Socket 604);
+Server;;Nocona (NetBurst);G1;bd;f49;;;Pentium 4 Xeon (Socket 604);
+Desktop;;Prescott (NetBurst);R0;5c;f4a;;;Pentium 4 (Prescott);
+Server;;Irwindale (NetBurst);R0;5d;f4a;;;Pentium 4 Xeon (Socket 604);
+Desktop;;Cedar Mill (NetBurst);B1;04;f62;;;;Pentium 4 HT 631, 641, 651, 661
+Desktop;;Presler (NetBurst);B1;04;f62;;;;Pentium D 920, 930, 940, 950, Pentium Extreme Edition 955
+Desktop;;Cedar Mill (NetBurst);C1;34;f64;;;;Pentium 4 HT 631, 641, 651, 661, Celeron D 347, 352, 356
+Desktop;;Presler (NetBurst);C1;34;f64;;;;Pentium D 915, 920, 925, 930, 940, 945, 950, 960, Pentium Extreme Edition 965
+Server;;Dempsey (NetBurst);C1;01;f64;;;Xeon 50xx;
+Desktop;;Cedar Mill (NetBurst);D0;04;f65;;;;Pentium 4 HT 631, 641, 651, 661, Celeron D 347, 352, 356, 360, 365
+Desktop;;Presler (NetBurst);D0;04;f65;;;;Pentium D 915, 925, 935, 945, 950, 960
+Server;;Dempsey (NetBurst);D0;01;f65;;;Xeon 50xx;
+Server;;Tulsa (NetBurst);B0;22;f68;;;;Xeon 7110N, 7110M, 7120N, 7120M, 7130N, 7130M, 7140N, 7140M, 7150N
+Server;;Deschutes (PII);B0;00;01632;;;Pentium II Xeon;
+SOC;;Tolapai (P-M);B0;ff;10650;;;;EP80579
+Desktop;;Conroe-L (Merom);A1;01;10661;;;;Celeron 220, 420, 430, 440, 450
+Mobile;;Merom-L;A1;82;10661;;;;
+Desktop;;Wolfdale (Penryn);M0;91;10676;;;;Core2 Duo E7200, E7300, E8190, E8200, E8300, E8400, E8500, Core2 Quad Q9450, Q9550, Core2 Extreme QX9650, QX9770, QX9775
+Desktop;;Yorkfield (Penryn);C0;91;10676;;;;Core2 Quad Q9450, Q9550, Core2 Extreme QX9650, QX9770, QX9775
+Mobile;;Penryn;C0;91;10676;;;;Core2 Duo E8135, E8235, E8335, E8435, T8100, T8300, T9300, T9400, T9500, T9600, P7350, P7450, P8400, P8600, P9500, SP9300, SP9400, SL9300, SL9380, SL9400, SU9300, SU9400, Core2 Extreme X9000, X9100
+Server;;Wolfdale Xeon (Penryn);C0;91;10676;;;;Xeon E3110
+Server;;Yorkfield Xeon (Penryn);C0;91;10676;;;;Xeon X3350, X3360
+Server;;Wolfdale-DP (Penryn);M0;04;10676;;;;Xeon E5205, E5220, E5240, X5260, X5272
+Server;;Harpertown (Penryn);C0;40;10676;;;;Xeon L5408, L5410, L5420, E5405,E5410,E5420,E5430, E5440, E5450, E5462, E5472, X5450, X5460, X5470, X5472, X5482
+Desktop;;Yorkfield (Penryn);C1,M1;10;10677;;;Core2 Extreme, Core2 Quad;Core2 Extreme QX9650, QX9770, QX9775, Core2 Quad Q8200, Q8200S, Q8400, Q8400S, Q9300, Q9400, Q9400S, Q9450, Q9500, Q9505, Q9505S, Q9550, Q9550S, Q9650
+Server;;Yorkfield Xeon (Penryn);C1,M1;10;10677;;;Xeon L33xx, X33xx;Xeon L3360, X3320, X3330, X3350, X3360, X3370, X3380
+Desktop;;Wolfdale (Penryn);E0,R0;b1;1067a;;;Core2 Extreme, Core2 Quad, Core2 Duo;Core2 Extreme QX9650, QX9770, QX9775, Core2 Quad Q8200, Q8200S, Q8300, Q8400, Q8400S, Q9300, Q9400, Q9400S, Q9450, Q9500, Q9505, Q9505S, Q9550, Q9550S, Q9650, Core2 Duo E7200, E7300, E7400, E7500, E7600, E8190, E8200, E8300, E8400, E8500, E8600, Pentium E5200, E5300, E5400, E5500, E5700, E5800, E6300, E6500, E6500K, E6600, E6700, E6800, Celeron E3200, E3300, E3400, E3500
+Mobile;;Wolfdale (Penryn);E0,R0;b1;1067a;;;Core2 Extreme, Core2 Quad, Core2 Duo, Core2 Solo, Pentium T4x00;Core2 Extreme QX9300, X9000, X9100, Core2 Quad Q9000, Q9100, Core2 Duo T6400, T6500, T6670, T8100, T8300, T9300, T9400, T9500, T9550, T9600, T9800, T9900, SU9300, SU9400, SU9600, SP9300, SP9400, SP9600, SL9380, SL9400, SL9600, SL9300, P7350, P7370, P7450, P7550, P7570, P8400, P8600, P8700, P8800, P9500, P9600, P9700, Core2 Solo SU3500, ULV SU3500, ULV SU3300, Pentium T4200, T4300, T4400, T4500, Celeron 900, 925, SU2300, T3100, T3300, T3500, ULV 763, Celeron M Processor ULV 722, ULV 723, ULV 743
+Server;;Harpertown (Penryn);E0;44;1067a;;;;Xeon L5408, L5410, L5420, L5430, E5405, E5410, E5420, E5430, E5440, E5450, E5462, E5472, X5450, X5460, X5470, X5492
+Server;;Wolfdale-DP (Penryn);E0;44;1067a;;;;Xeon E3110, E3120, E5205, E5220, L3110, L5215, L5240, X5260, X5270, X5272
+Dekstop;;Bloomfield (Nehalem);C0;03;106a4;NHM;;Core i7-9xx;
+Dekstop;;Bloomfield (Nehalem);D0;03;106a5;NHM;;Core i7-9xx;
+Server;;Bloomfield Xeon (Nehalem);D0;03;106a5;NHM;EP,WS;Xeon E/L/X/W55xx;
+Mobile;;Silverthorne (Bonnell);C0;01;106c2;;;Intel Atom Z5x0;
+Desktop;;Diamondville (Bonnell);C0;04;106c2;;;;Intel Atom 230
+Desktop;;Diamondville (Bonnell);C0;08;106c2;;;;Intel Atom 330
+Mobile;;Diamondville (Bonnell);C0;04;106c2;;;;Intel Atom N270, N280
+Desktop;;Pineview (Bonnell);A0;05;106ca;;;;Intel Atom D410, D425
+Desktop;;Pineview (Bonnell);B0;18;106ca;;;;Intel Atom D510, D525
+Mobile;;Pineview (Bonnell);A0;05;106ca;;;;Intel Atom N435, N450, N455, N470, N475
+Mobile;;Pineview (Bonnell);B0;18;106ca;;;;Intel Atom N550, N570
+Server;;Dunnington (Penryn);A1;08;106d1;;;Intel Xeon MP;Intel Xeon E7420, E7430, E7440, E7450, E7458, L7445, X7460
+Server;;Jasper Forest (Nehalem);B0;09;106e4;NHM;;;Xeon EC3528, EC3529, EC5509, EC5539, EC5549, LC3518, LC3528, LC5518, LC5528, Celeron P1053
+Dekstop;;Lynnfield (Nehalem);B1;13;106e5;NHM;;Core i7-8xx, i5-7xx;
+Mobile;;Clarksfield (Nehalem);B1;13;106e5;NHM;;Core i7-9xxXM, i7-8xxQM, i7-7xxQM;
+Server;;Lynnfield Xeon (Nehalem);B1;13;106e5;NHM;;Xeon L3426, X24xx;
+Desktop;;Westmere;K0,C2;12;20652;WSM;;Core i7-6xx, i5-6xx/5xx/4xx, i3-5xx/3xx, Pentium G69xx/P6xxx/U5xxx, Celeon P45xx/U3xxx;
+Mobile;;Westmere;K0,C2;12;20652;WSM;;Core i7-6xxM, i5-6xxM/4xxM, i3-5xxM/3xxM;
+Server;;Westmere;K0,C2;12;20652;WSM;;Xeon L3406;
+Desktop;;Clarkdale (Westmere);K0;92;20655;WSM;;Core i7-6xxE/LE/UE, i5-5xxE, i3-3xxE;
+Mobile;;Arrandale (Westmere);K0;92;20655;WSM;;Core i7-6xxM/LM/UM, i5-5xxM/UM, i3-3xxM/UM, Pentium Mobile P6xxx/U5xxx, Celeron Mobile P4xxx/U3xxx;
+SOC;;Lincroft (Bonnell);C0;01;20661;;;;Intel Atom Z600, Z605, Z610, Z612, Z615, Z620, Z625, Z650, Z670
+SOC;;Tunnell Creek (Bonnell);B0,B1;02;20661;;;;Intel Atom E620, E620T, E640, E640T, E660, E660T, E680, E680T
+Desktop;;Sandy Bridge;D2,J1,Q0;12;206a7;SNB;;Core Gen2;
+Mobile;;Sandy Bridge;D2,J1,Q0;12;206a7;SNB;;Core Gen2 Mobile;
+Server;;Sandy Bridge;D2,Q0;12;206a7;SNB;Xeon E3;Xeon E3;
+Desktop;;Gulftown (Westmere);B1;03;206c2;WSM;;;Core i7-970/980/980X/990X
+Server;;Westmere-EP;B1;03;206c2;WSM;EP;Xeon E/L/X56xx;
+Server;;Westmere-WS;B1;03;206c2;WSM;WS;Xeon W36xx;
+Desktop;;Sandy Bridge;C1,M0;6d;206d6;SNB;E;Core i7-39xx, i7-38xx;
+Server;;Sandy Bridge;C1,M0;6d;206d6;SNB;EN,EP;Xeon E5;
+Desktop;;Sandy Bridge;C2,M1;6d;206d7;SNB;E;Core i7-39xx, i7-38xx;
+Server;;Sandy Bridge;C2,M1;6d;206d7;SNB;EN,EP;Xeon E5;
+Server;;Nehalem;D0;04;206e6;NHM;EX;Xeon E/L/X65xx/75xx;
+Server;;Westmere-EX;A2;05;206f2;WSM;EX;Xeon E7;
+SOC;;Valleyview;C0;02;30678;VLV;;Atom Z36xx, Z37xx, Z38xx, Z39xx;
+SOC;;Valleyview;C0;0C;30678;VLV;;Celeron N2xxx, Pentium N35xx;
+SOC;;Valleyview;D0;0F;30679;VLV;;Atom E38xx;
+Desktop;;Ivy Bridge;E1,E2,L1;12;306a9;IVB;;Core Gen3;
+Mobile;;Ivy Bridge;E1,E2,L1;12;306a9;IVB;;Core Gen3 Mobile;
+Server;;Ivy Bridge;E1,E2,L1;12;306a9;IVB;;Xeon E3 v2;
+Desktop;;Haswell;Cx,Dx;32;306c3;HSW;S;Core Gen4;
+Mobile;;Haswell;Cx,Dx;32;306c3;HSW;H;Core Gen4 Mobile;
+Server;;Haswell;Cx,Dx;32;306c3;HSW;Xeon E3;Xeon E3 v3;
+Mobile;;Broadwell;E0,F0;c0;306d4;BDW;U,Y;Core Gen5 Mobile;
+Desktop;;Ivy Bridge;S1;ed;306e4;IVB;E;Core-i7 49xx/48xx;Core i7-4960X/4930K/4820K
+Server;;Ivy Bridge;C0,C1,M1,S1;ed;306e4;IVB;EP;Xeon E5 v2;
+Server;;Ivy Bridge;;ed;306e6;IVB;EX;Xeon E7 v2 ES;
+Server;;Ivy Bridge;D1;ed;306e7;IVB;EX;Xeon E7 v2;
+Desktop;;Haswell;C0,C1,M1,R2;6f;306f2;HSX;E;Core i7-59xx/58xx;
+Server;;Haswell;C0,C1,M1,R2;6f;306f2;HSX;EN,EP,EP 4S;Xeon E5 v3;
+Server;;Haswell;E0;80;306f4;HSX;EX;Xeon E7 v3;
+Mobile;;Haswell;Cx,Dx;72;40651;HSW;U;Core Gen4 Mobile;
+Desktop;;Broadwell;E0,G0;22;40671;BDW;S;Core Gen5;
+Mobile;;Broadwell;E0,G0;22;40671;BDW;H;Core Gen5 Mobile;
+Server;;Broadwell;E0,G0;22;40671;BDW;Xeon E3;Xeon E3 v4;
+Desktop;;Haswell;Cx,Dx;32;40661;HSW;R;Core Gen4;
+Mobile;;Haswell;Cx,Dx;32;40661;HSW;H;Core Gen4 Mobile;
+SOC;;Cherry View;C0;01;406c3;CHV;;Atom x5-Zxxxx;
+SOC;;Cherry View;D0;01;406c4;CHV;;Celeron Jxxxx, N3xxx, Pentium J3xxx, N3xxx, Atom x5-E8000;
+SOC;;Avoton;B0,C0;01;406d8;AVN;;Atom C2xxx;
+Mobile;;Skylake;D0;c0;406e3;SKL;U,Y;Core Gen6 Mobile;
+Mobile;;Skylake;K1;c0;406e3;SKL;U 2+3e;Core Gen6 Mobile;
+Desktop;;Broadwell;B0,M0,R0;ef;406f1;BDX;E;Core i7-69xx/68xx;
+Server;;Broadwell;B0,M0,R0;ef;406f1;BDX;EP,EX;Xeon E5/E7 v4;
+Server;;Broadwell;B0,M0,R0;ef;406f1;BDX;ML;Xeon E5/E7 v4;
+Server;;Skylake;B1;97;50653;SKX;SP;Xeon Scalable;
+Desktop;;Skylake;H0,M0,U0;b7;50654;SKX;X;Core i9-7xxxX, i9-9xxxX;
+Server;;Skylake;H0,M0,U0;b7;50654;SKX;SP,W;Xeon Scalable;
+Server;;Skylake;M1;b7;50654;SKX;D;Xeon D-21xx;
+Server;;Cascade Lake;A0;b7;50655;CLX;SP;Xeon Scalable Gen2;
+Server;;Cascade Lake;B0;bf;50656;CLX;SP;Xeon Scalable Gen2;
+Desktop;;Cascade Lake;B1,L1;bf;50657;CLX;X;;
+Server;;Cascade Lake;B1,L1;bf;50657;CLX;SP;Xeon Scalable Gen2;
+Server;;Cascade Lake;B1,L1;bf;50657;CLX;W;;Xeon W-3275M, W-3275, W-3265M, W-3265, W-3245M, W-3245, W-3235, W-3225, W-3223, W-2295, W-2275, W-2265, W-2255, W-2245, W-2235, W-2225, W-2223
+Server;;Cooper Lake;A1;bf;5065b;CPX;SP;Xeon Scalable Gen3;
+Server;;Broadwell;V1;10;50662;BDX;DE;;Xeon D-1520/40
+Server;;Broadwell;V2,V3;10;50663;BDX;DE;;Xeon D-1518/19/21/27/28/31/33/37/41/48, Pentium D1507/08/09/17/19
+Server;;Broadwell;Y0;10;50664;BDX;DE;;Xeon D-1557/59/67/71/77/81/87
+Server;;Broadwell;A0,A1;10;50665;BDX;NS;;Xeon D-1513N/23/33/43/53
+Server;;Hewitt Lake (Broadwell);A1;10;50665;HWL;;;Xeon D-1602/22/23N/27/33N/37/49N/53N
+Server;;Knights Landing;B0;78;50671;KNL;;Xeon Phi x200;Xeon Phi 7210, 7210F, 7230, 7230F, 7250, 7250F, 7290, 7290F
+SOC;;Broxton;C0;01;506c2;BXT;;Atom T5500/5700
+SOC;;Apollo Lake;D0;03;506c9;APL;;Pentium N/J4xxx, Celeron N/J3xxx, Atom x5/7-E39xx;
+SOC;;Apollo Lake;B1,F1;03;506ca;APL;;Atom 3900 Series;Atom x5-E3930, x5-E3940, x7-E3950
+Desktop;;Skylake;N0,R0,S0;36;506e3;SKL;S;Core Gen6;
+Mobile;;Skylake;N0,R0,S0;36;506e3;SKL;H;Core Gen6 Mobile;
+Server;;Skylake;N0,R0,S0;36;506e3;SKL;Xeon E3;Xeon E3 v5;
+SOC;;Denverton;B0;01;506f1;DNV;;Atom C3xxx;
+SOC;;XMM 7272 (SoFIA);;01;60650;;;XMM 7272
+Mobile;;Cannon Lake;D0;80;60663;CNL;U;Core Gen8 Mobile;
+Server;;Ice Lake;C0;87;606a5;ICX;SP;Xeon Scalable Gen3;
+Server;;Ice Lake;D0;87;606a6;ICX;SP;Xeon Scalable Gen3;
+Server;;Ice Lake;B0;10;606c1;ICL;D;;Xeon D-17xx, D-27xx
+SOC;;Gemini Lake;B0;01;706a1;GLK;;;Pentium J5005/N5000, Celeron J4005/J4105/N4000/N4100
+SOC;;Gemini Lake;R0;01;706a8;GLK;R;;Pentium J5040/N5030, Celeron J4125/J4025/N4020/N4120
+Mobile;;Ice Lake;D1;80;706e5;ICL;U,Y;Core Gen10 Mobile;
+Server;;Knights Mill;A0;08;80650;KNM;;Xeon Phi 72x5;Xeon Phi 7235, 7285, 7295
+SOC;;Snow Ridge;B0;01;80664;SNR;;Atom P59xxB;
+SOC;;Snow Ridge;B1;01;80665;SNR;;Atom P59xxB;
+SOC;;Snow Ridge;C0;01;80667;SNR;;Atom P59xxB;
+SOC;;Lakefield;B2,B3;10;806a1;LKF;;Core w/Hybrid Technology;
+Mobile;;Tiger Lake;B1;80;806c1;TGL;UP3,UP4;Core Gen11 Mobile;
+Mobile;;Tiger Lake Refresh;C0;80;806c2;TGL;R;Core Gen11 Mobile;
+Mobile;;Tiger Lake;R0;c2;806d1;TGL;H;Core Gen11 Mobile;
+Mobile;;Amber Lake;H0;10;806e9;AML;Y 2+2;Core Gen8 Mobile;
+Mobile;;Kaby Lake;H0;c0;806e9;KBL;U,Y;Core Gen7 Mobile;
+Mobile;;Kaby Lake;J1;c0;806e9;KBL;U 2+3e;Core Gen7 Mobile;
+Mobile;;Coffee Lake;D0;c0;806ea;CFL;U 4+3e;Core Gen8 Mobile;
+Mobile;;Kaby Lake;Y0;c0;806ea;KBL;R;Core Gen8 Mobile;
+Mobile;;Amber Lake;V0;94;806ec;AML;Y 4+2;Core Gen10 Mobile;
+Mobile;;Comet Lake;V0;94;806ec;CML;U 4+2;Core Gen10 Mobile;
+Mobile;;Whiskey Lake;W0;d0;806eb;WHL;U;Core Gen8 Mobile;
+Mobile;;Whiskey Lake;V0;94;806ec;WHL;U;Core Gen8 Mobile;
+Mobile;;Whiskey Lake;V0;94;806ed;WHL;U;Core Gen8 Mobile;
+Server;;Sapphire Rapids;E0,S1;87;806f4;SPR;SP;Xeon Scalable Gen4;
+Server;;Sapphire Rapids;B1;10;806f5;SPR;HBM;Xeon Max;
+Server;;Sapphire Rapids;E2;87;806f5;SPR;SP;Xeon Scalable Gen4;
+Server;;Sapphire Rapids;E3;87;806f6;SPR;SP;Xeon Scalable Gen4;
+Server;;Sapphire Rapids;E4,S2;87;806f7;SPR;SP;Xeon Scalable Gen4;
+Server;;Sapphire Rapids;B3;10;806f8;SPR;HBM;Xeon Max;
+Server;;Sapphire Rapids;E5,S3;87;806f8;SPR;SP;Xeon Scalable Gen4;
+SOC;;Elkhart Rate;B1;01;90661;EHL;;Pentium J6426/N6415, Celeron J6412/J6413/N6210/N6211, Atom x6000E;
+Desktop;;Alder Lake;C0;02;90672;ADL;S 8+8;Core Gen12;
+Mobile;;Alder Lake;C0;03;90672;ADL;HX;Core Gen12 Mobile;
+Desktop;;Alder Lake;K0;01;90675;ADL;S 6+0;Core Gen12;
+Mobile;;Alder Lake;L0;82;906a3;ADL;P 6+8;Core Gen12 Mobile;
+Mobile;;Alder Lake;R0;80;906a3;ADL;U 9W;Core Gen12 Mobile;
+Mobile;;Arizona Beach;A0;40;906a4;AZB;;;Intel(R) Atom(R) C1100
+Mobile;;Alder Lake;R0;82;906a4;ADL;P 2+8;Core Gen12 Mobile;
+Desktop;;Kaby Lake;B0;2a;906e9;KBL;S,X;Core Gen7;
+Mobile;;Kaby Lake;B0;2a;906e9;KBL;G,H;Core Gen7 Mobile;
+Server;;Kaby Lake;B0;2a;906e9;KBL;Xeon E3;Xeon E3 v6;
+Desktop;;Coffee Lake;U0;22;906ea;CFL;S;Core Gen8 Desktop;
+Mobile;;Coffee Lake;U0;22;906ea;CFL;H;Core Gen8 Mobile;
+Server;;Coffee Lake;U0;22;906ea;CFL;Xeon E;Xeon E;
+Desktop;;Coffee Lake;B0;02;906eb;CFL;S;Core Gen8 Desktop;
+Mobile;;Coffee Lake;B0;02;906eb;CFL;H;Core Gen8 Mobile;
+Server;;Coffee Lake;B0;02;906eb;CFL;E;Xeon E;
+Desktop;;Coffee Lake;P0;22;906ec;CFL;S;Core Gen9 Desktop;
+Mobile;;Coffee Lake;P0;22;906ec;CFL;H;Core Gen9 Mobile;
+Server;;Coffee Lake;P0;22;906ec;CFL;Xeon E;Xeon E;
+Desktop;;Coffee Lake;R0;22;906ed;CFL;S;Core Gen9 Desktop;
+Mobile;;Coffee Lake;R0;22;906ed;CFL;H;Core Gen9 Mobile;
+Server;;Coffee Lake;R0;22;906ed;CFL;Xeon E;Xeon E;
+SOC;;Jasper Lake;A0,A1;01;906c0;JSL;;Pentium N6000/N6005, Celeron N4500/N4505/N5100/N5105;
+Mobile;;Comet Lake;R1;20;a0652;CML;H;Core Gen10 Mobile;
+Desktop;;Comet Lake;G1;22;a0653;CML;S 6+2;Core Gen10 Desktop;
+Desktop;;Comet Lake;Q0;22;a0655;CML;S 10+2;Core Gen10 Desktop;
+Mobile;;Comet Lake;A0;80;a0660;CML;U 6+2;Core Gen10 Mobile;
+Mobile;;Comet Lake;K1;80;a0661;CML;U 6+2 v2;Core Gen10 Mobile;
+Desktop;;Rocket Lake;B0;02;a0671;RKL;S;Core Gen11;
+Desktop;;Raptor Lake;B0;32;b0671;RPL;S;Core Gen13;
+Mobile;;Raptor Lake;J0;e0;b06a2;RPL;P 6+8,H 6+8;Core Gen13;
+Mobile;;Raptor Lake;Q0;e0;b06a3;RPL;U 2+8;Core Gen13;
+SOC;;Alder Lake;A0;01;b06e0;ADL;N;;Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+Desktop;;Alder Lake;C0;03;b06f2;ADL;;Core Gen12;
+Desktop;;Alder Lake;C0;03;b06f5;ADL;;Core Gen12;
+
+# sources:
+# https://en.wikichip.org/wiki/intel/cpuid
+# https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/x86/include/asm/intel-family.h
+# releasenote from microcode releases
+# https://software.intel.com/security-software-guidance/processors-affected-transient-execution-attack-mitigation-product-cpu-model
+# https://en.wikipedia.org/wiki/Cascade_Lake_(microarchitecture)
+# https://en.wikipedia.org/wiki/List_of_Intel_Broadwell-based_Xeon_microprocessors
+# https://github.com/InstLatx64/InstLatx64
+# https://fossies.org/linux/cpuid/cpuid.c
+# https://software.intel.com/content/www/us/en/develop/articles/intel-architecture-and-processor-identification-with-cpuid-model-and-family-numbers.html
+# http://ixbtlabs.com/articles/cpuerrata/index.html
+# http://bios.rom.by/ROMutils/BIOS_Patcher/ALLCODES.TXT
