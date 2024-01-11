@@ -11,8 +11,8 @@
 
 Summary:        CPU microcode updates for Intel x86 processors
 Name:           microcode_ctl
-Version:        20220809
-Release:        2.%{intel_ucode_version}.2%{?dist}
+Version:        %{intel_ucode_version}
+Release:        2%{?dist}
 Epoch:          4
 License:        CC0 and Redistributable, no modification permitted
 URL:            https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
@@ -570,13 +570,14 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Tue Aug 22 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230808.2
+* Tue Aug 22 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230808-2
 - Add support for the new, more correct, variant of dracut's default
   $fw_dir path in dracut_99microcode_ctl-fw_dir_override_module_init.sh.
 
-* Thu Aug 10 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230808.1
+* Thu Aug 10 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230808-1
 - Update Intel CPU microcode to microcode-20230808 release, addresses
-  CVE-2022-40982, CVE-2022-41804, CVE-2023-23908 (#2229728):
+  CVE-2022-40982, CVE-2022-41804, CVE-2023-23908 (#2213124, #2223992, #2230677,
+  #2230689):
   - Update of 06-55-04/0xb7 (SKX-D/SP/W/X H0/M0/M1/U0) microcode (in
     intel-06-55-04/intel-ucode/06-55-04) from revision 0x2006f05 up
     to 0x2007006;
@@ -775,7 +776,7 @@ rm -rf %{buildroot}
   - Update of 06-be-00/0x11 (ADL-N A0) microcode from revision 0x10 up
     to 0x11 (old pf 0x1).
 
-* Mon Aug 07 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230516.1
+* Mon Aug 07 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230516-1
 - Update Intel CPU microcode to microcode-20230516 release (#2213124):
   - Addition of 06-be-00/0x01 (ADL-N A0) microcode at revision 0x10;
   - Addition of 06-9a-04/0x40 (AZB A0) microcode at revision 0x4;
@@ -947,21 +948,21 @@ rm -rf %{buildroot}
   - Update of 06-ba-03/0xc0 (RPL-U 2+8 Q0) microcode from revision 0x410e
     up to 0x4112.
 
-* Tue Aug 01 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230214.4
+* Tue Aug 01 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230214-4
 - Avoid spurious find failures due to calls on directories that may not exist
   (#2225681).
 
-* Wed Jun 28 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230214.3
+* Wed Jun 28 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230214-3
 - Force locale to C in check_caveats, reload_microcode, and update_ucode
   (#2218104).
 
-* Tue Jun 06 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230214.2
+* Tue Jun 06 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230214-2
 - Cleanup the dangling symlinks in update_ucode (#2213022).
 
-* Wed Feb 15 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20220809-2.20230214.1
+* Wed Feb 15 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230214-1
 - Update Intel CPU microcode to microcode-20230214 release, addresses
-  CVE-2022-21216, CVE-2022-33196, CVE-2022-33972, CVE-2022-38090 (#2171236,
-  #2171261):
+  CVE-2022-21216, CVE-2022-33196, CVE-2022-33972, CVE-2022-38090 (#2171237,
+  #2171262):
   - Addition of 06-6c-01/0x10 (ICL-D B0) microcode at revision 0x1000211;
   - Addition of 06-8f-04/0x87 (SPR-SP E0/S1) microcode at revision
     0x2b000181;
