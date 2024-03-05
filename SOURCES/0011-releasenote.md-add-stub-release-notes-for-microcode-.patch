@@ -1,0 +1,62 @@
+From f8d6bf8bd8f9ca011c9e0703ece03b2a128b263a Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Mon, 6 Nov 2023 12:59:23 +0100
+Subject: [PATCH] releasenote.md: add stub release notes for microcode-20231009
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 40 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 40 insertions(+)
+
+diff --git a/releasenote.md b/releasenote.md
+index 429105c..050cfb4 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -1,4 +1,44 @@
+ # Release Notes
++## microcode-20231009
++
++### Purpose
++
++- Security updates for [INTEL-SA-00950](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00950.html)
++
++- Update for functional issues.
++
++### New Platforms
++
++### Updated Platforms
++
++| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
++|:---------------|:---------|:------------|:---------|:---------|:---------
++| ADL            | C0       | 06-97-02/07 | 0000002e | 00000032 | Core Gen12
++| ADL            | C0       | 06-97-05/07 | 0000002e | 00000032 | Core Gen12
++| ADL            | C0       | 06-bf-02/07 | 0000002e | 00000032 | Core Gen12
++| ADL            | C0       | 06-bf-05/07 | 0000002e | 00000032 | Core Gen12
++| ADL            | L0       | 06-9a-03/80 | 0000042c | 00000430 | Core Gen12
++| ADL            | L0       | 06-9a-04/80 | 0000042c | 00000430 | Core Gen12
++| ADL-N          | A0       | 06-be-00/11 | 00000011 | 00000012 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
++| AZB            | A0       | 06-9a-04/40 | 00000004 | 00000005 | Intel(R) Atom(R) C1100
++| ICL-D          | B0       | 06-6c-01/10 | 01000230 | 01000268 | Xeon D-17xx, D-27xx
++| ICL-U/Y        | D1       | 06-7e-05/80 | 000000bc | 000000c2 | Core Gen10 Mobile
++| ICX-SP         | Dx/M1    | 06-6a-06/87 | 0d0003a5 | 0d0003b9 | Xeon Scalable Gen3
++| RKL-S          | B0       | 06-a7-01/02 | 00000059 | 0000005d | Core Gen11
++| RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 | 00004119 | 0000411c | Core Gen13
++| RPL-S          | B0       | 06-b7-01/32 | 00000119 | 0000011d | Core Gen13
++| RPL-U 2+8      | Q0       | 06-ba-03/e0 | 00004119 | 0000411c | Core Gen13
++| SPR-HBM        | B1       | 06-8f-05/10 | 2c000271 | 2c000290 | Xeon Max
++| SPR-HBM        | B3       | 06-8f-08/10 | 2c000271 | 2c000290 | Xeon Max
++| SPR-SP         | E2       | 06-8f-05/87 | 2b0004b1 | 2b0004d0 | Xeon Scalable Gen4
++| SPR-SP         | E3       | 06-8f-06/87 | 2b0004b1 | 2b0004d0 | Xeon Scalable Gen4
++| SPR-SP         | E4/S2    | 06-8f-07/87 | 2b0004b1 | 2b0004d0 | Xeon Scalable Gen4
++| SPR-SP         | E5/S3    | 06-8f-08/87 | 2b0004b1 | 2b0004d0 | Xeon Scalable Gen4
++| TGL            | B0/B1    | 06-8c-01/80 | 000000ac | 000000b4 | Core Gen11 Mobile
++| TGL-H          | R0       | 06-8d-01/c2 | 00000046 | 0000004e | Core Gen11 Mobile
++| TGL-R          | C0       | 06-8c-02/c2 | 0000002c | 00000034 | Core Gen11 Mobile
++
++
+ ## [microcode-20230808](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20230808)
+ 
+ ### Purpose
+-- 
+2.13.6
+
