@@ -16,6 +16,7 @@ microcode revisions in question are listed below:
  * 06-8c-01, revision 0xa6: fdcf89e3a15a20df8aeee215b78bf5d13d731044
  * 06-8c-01, revision 0xaa: cf84883f6b3184690c25ccade0b10fa839ac8657
  * 06-8c-01, revision 0xac: b9f342e564a0be372ed1f4709263bf811feb022a
+ * 06-8c-01, revision 0xb4: 6596bb8696cde85538bb833d090f0b7a42d6ae14
 
 Please contact your system vendor for a BIOS/firmware update that contains
 the latest microcode version.  For the information regarding microcode versions
