@@ -89,7 +89,7 @@ add|remove|refresh|list)
 		kvers=$(find_d /lib/modules/ -name '[2-9].*' -print)
 		for k_dir in $kvers; do
 			k="${k_dir#/lib/modules/}"
-			[ ! -e "${k_dir}/symvers.gz" ] || {
+			[ ! -e "${k_dir}/symvers.gz" -a ! -e "${k_dir}/symvers.xz" ] || {
 				debug "  Adding $k (from /lib/modules)"
 				kernel="$kernel $k"
 			}
@@ -272,8 +272,8 @@ fi | while read -r i; do
 		add|refresh)
 			debug "    Adding $paths (part of $action)..."
 
-			[ -e "/lib/modules/$k/symvers.gz" ] || {
-				debug "      \"/lib/modules/$k/symvers.gz\"" \
+			[ -e "/lib/modules/$k/symvers.gz" -o -e "/lib/modules/$k/symvers.xz" ] || {
+				debug "      \"/lib/modules/$k/symvers.[gx]z\"" \
 				      "does not exist, skipping"
 				continue
 			}

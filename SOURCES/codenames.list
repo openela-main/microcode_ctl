@@ -324,12 +324,15 @@ Desktop;;Comet Lake;Q0;22;a0655;CML;S 10+2;Core Gen10 Desktop;
 Mobile;;Comet Lake;A0;80;a0660;CML;U 6+2;Core Gen10 Mobile;
 Mobile;;Comet Lake;K1;80;a0661;CML;U 6+2 v2;Core Gen10 Mobile;
 Desktop;;Rocket Lake;B0;02;a0671;RKL;S;Core Gen11;
+Mobile;;Meteor Lake;C0;e6;a06a4;MTL;H,U;Core™ Ultra Processor;
 Desktop;;Raptor Lake;B0;32;b0671;RPL;S;Core Gen13;
 Mobile;;Raptor Lake;J0;e0;b06a2;RPL;P 6+8,H 6+8;Core Gen13;
 Mobile;;Raptor Lake;Q0;e0;b06a3;RPL;U 2+8;Core Gen13;
 SOC;;Alder Lake;A0;01;b06e0;ADL;N;;Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
 Desktop;;Alder Lake;C0;03;b06f2;ADL;;Core Gen12;
 Desktop;;Alder Lake;C0;03;b06f5;ADL;;Core Gen12;
+Server;;Emerald Rapids;A0;87;c06f1;EMR;SP;Xeon Scalable Gen5;
+Server;;Emerald Rapids;A1;87;c06f2;EMR;SP;Xeon Scalable Gen5;
 
 # sources:
 # https://en.wikichip.org/wiki/intel/cpuid

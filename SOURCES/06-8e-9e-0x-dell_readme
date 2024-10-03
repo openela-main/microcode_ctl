@@ -135,6 +135,12 @@ in question:
  * 06-9e-0c, revision 0xf4: 74d52a11a905dd7b254fa72b014c3bab8022ba3d
  * 06-9e-0d, revision 0xfa: 484738563e793d5b90b94869dc06edf0407182f1
 
+ * 06-8e-0c, revision 0xfa: d2c2ed4634b2f345382991237bedb90430fcc0b3
+ * 06-9e-09, revision 0xf8: 69b8a5435bfb976ef5ec5930dae870e26835442e
+ * 06-9e-0a, revision 0xf6: c1f0f556cd203aa6e1d0d1ffb0a65b32f32692be
+ * 06-9e-0c, revision 0xf6: a8dfddd009f750b6528f93556b67d4eeca1e5dfa
+ * 06-9e-0d, revision 0xfc: a0ad865fd2d3b9d955a889c96fabc67da0235dda
+
 Please contact your system vendor for a BIOS/firmware update that contains
 the latest microcode version.  For the information regarding microcode versions
 required for mitigating specific side-channel cache attacks, please refer
