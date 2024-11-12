@@ -11,8 +11,8 @@
 
 Summary:        CPU microcode updates for Intel x86 processors
 Name:           microcode_ctl
-Version:        20230808
-Release:        2.%{intel_ucode_version}.1%{?dist}
+Version:        %{intel_ucode_version}
+Release:        1%{?dist}
 Epoch:          4
 License:        CC0 and Redistributable, no modification permitted
 URL:            https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
@@ -552,10 +552,10 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Mon Oct 07 2024 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230808-2.20240910.1
+* Mon Sep 23 2024 Eugene Syromiatnikov <esyr@redhat.com> - 4:20240910-1
 - Update Intel CPU microcode to microcode-20240910 release, addresses
 - Addresses CVE-2024-23984, CVE-2024-24853, CVE-2024-24968, CVE-2024-24980,
-  CVE-2024-25939 (RHEL-59082):
+  CVE-2024-25939 (RHEL-58057):
   - Update of 06-8c-01/0x80 (TGL-UP3/UP4 B1) microcode (in
     intel-06-8c-01/intel-ucode/06-8c-01) from revision 0xb6 up to 0xb8;
   - Update of 06-8e-09/0x10 (AML-Y 2+2 H0) microcode (in
@@ -677,12 +677,12 @@ rm -rf %{buildroot}
   - Update of 06-be-00/0x19 (ADL-N A0) microcode from revision 0x17 up
     to 0x1a (old pf 0x11).
 
-* Mon Jun 17 2024 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230808-2.20240531.1
+* Mon Jun 17 2024 Eugene Syromiatnikov <esyr@redhat.com> - 4:20240531-1
 - Update Intel CPU microcode to microcode-20240531 release, addresses
   CVE-2023-22655, CVE-2023-23583. CVE-2023-28746, CVE-2023-38575,
   CVE-2023-39368, CVE-2023-42667, CVE-2023-43490, CVE-2023-45733,
-  CVE-2023-46103, CVE-2023-49141 (RHEL-30860, RHEL-30863, RHEL-30866,
-  RHEL-30869, RHEL-30872, RHEL-48717):
+  CVE-2023-46103, CVE-2023-49141 (RHEL-30861, RHEL-30864, RHEL-30867,
+  RHEL-30870, RHEL-30873, RHEL-41094, RHEL-41109):
   - Addition of 06-aa-04/0xe6 (MTL-H/U C0) microcode at revision 0x1c;
   - Addition of 06-ba-08/0xe0 microcode (in intel-ucode/06-ba-02) at
     revision 0x4121;
@@ -896,7 +896,7 @@ rm -rf %{buildroot}
   - Update of 06-bf-05/0x07 (ADL C0) microcode from revision 0x32 up
     to 0x35.
 
-* Wed Nov 01 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20230808-2.20231009.1
+* Wed Nov 01 2023 Eugene Syromiatnikov <esyr@redhat.com> - 4:20231009-1
 - Update Intel CPU microcode to microcode-20231009 release, addresses
   CVE-2023-23583:
   - Update of 06-8c-01/0x80 (TGL-UP3/UP4 B1) microcode (in
