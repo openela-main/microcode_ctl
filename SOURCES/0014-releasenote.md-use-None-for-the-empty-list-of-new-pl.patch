@@ -1,0 +1,92 @@
+From 1504477d81e0b914c9cc9e275c5c16eb488fdf70 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 18 Feb 2025 19:59:16 +0100
+Subject: [PATCH 14/16] releasenote.md: use "None" for the empty list of new
+ platforms
+
+Having an empty table (with an additional empty line, compared
+to non-empty ones) is really inconsistent.
+
+* releasenote.md (microcode-20241112, microcode-20241029,
+microcode-20240813, microcode-20240531, microcode-20240514,
+microcode-20231114): Replace empty tables in the "New Platforms"
+sub-section with "None".
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 24 ++++++------------------
+ 1 file changed, 6 insertions(+), 18 deletions(-)
+
+diff --git a/releasenote.md b/releasenote.md
+index 9e06b53..e9d3cb2 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -89,9 +89,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+@@ -130,9 +128,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+@@ -209,9 +205,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+@@ -259,9 +253,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+@@ -285,9 +277,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+@@ -431,9 +421,7 @@
+ 
+ ### New Platforms
+ 
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-
++None
+ 
+ ### Updated Platforms
+ 
+-- 
+2.13.6
+

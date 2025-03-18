@@ -1,0 +1,64 @@
+From 4c72d500e72432f238d8a7cf470895ae5f0c59f0 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 18 Feb 2025 15:30:20 +0100
+Subject: [PATCH 11/16] releasenote.md; add information about updates and
+ removals of SPR-SP microcode
+
+For some reason, information about updates and removals of 06-8f-04
+(SPR-SP E0), 06-8f-05 (SPR-SP E2), and 06-8f-06 (SPR-SP E3) microcode
+files is missing from microcode-20240312, microcode-20241112,
+and microcode-20250211 release notes.  Document those properly.
+
+* releasenote.md (microcode-20250211): Mention removal of 06-8f-05
+and 06-8f-06 microcode files.
+(microcode-20241112): Mention update of 06-8f-05 microcode from revision
+0x2b0005c0 up to 0x2b000603.
+(microcode-20240312): Mention removal of 06-8f-04 microcode file.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/releasenote.md b/releasenote.md
+index aa88db9..38934ad 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -55,6 +55,13 @@
+ | SPR-SP         | E5/S3    | 06-8f-08/87 | 2b000603 | 2b000620 | Xeon Scalable Gen4
+ | TWL            | N0       | 06-be-00/19 | 0000001a | 0000001c | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ 
++### Removed Platforms
++
++| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
++|:---------------|:---------|:------------|:---------|:---------|:---------
++| SPR-SP         | E2       | 06-8f-05/87 | 2b000603 |          | Xeon Scalable Gen4
++| SPR-SP         | E3       | 06-8f-06/87 | 2b000603 |          | Xeon Scalable Gen4
++
+ ### New Disclosures Updated in Prior Releases
+ 
+ | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+@@ -100,6 +107,7 @@
+ | RPL-HX/S       | C0       | 06-bf-02/07 | 00000036 | 00000037 | Core Gen13/Gen14
+ | RPL-S          | H0       | 06-bf-05/07 | 00000036 | 00000037 | Core Gen13/Gen14
+ | RPL-U 2+8      | Q0       | 06-ba-03/e0 | 00004122 | 00004123 | Core Gen13
++| SPR-SP         | E2       | 06-8f-05/87 | 2b0005c0 | 2b000603 | Xeon Scalable Gen4
+ | SPR-SP         | E3       | 06-8f-06/87 | 2b0005c0 | 2b000603 | Xeon Scalable Gen4
+ | SPR-SP         | E4/S2    | 06-8f-07/87 | 2b0005c0 | 2b000603 | Xeon Scalable Gen4
+ | SPR-SP         | E5/S3    | 06-8f-08/87 | 2b0005c0 | 2b000603 | Xeon Scalable Gen4
+@@ -394,6 +402,12 @@
+ | TGL-R          | C0       | 06-8c-02/c2 | 00000034 | 00000036 | Core Gen11 Mobile
+ | WHL-U          | V0       | 06-8e-0c/94 | 000000f8 | 000000fa | Core Gen8 Mobile
+ 
++### Removed Platforms
++
++| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
++|:---------------|:---------|:------------|:---------|:---------|:---------
++| SPR-SP         | E0       | 06-8f-04/87 | 2b0004d0 |          | Xeon Scalable Gen4
++
+ 
+ ## [microcode-20231114](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20231114)
+ 
+-- 
+2.13.6
+

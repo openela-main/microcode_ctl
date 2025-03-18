@@ -1,0 +1,36 @@
+From 972a7e27320a11d8708052d7b74398305235f668 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Tue, 25 Feb 2025 16:59:48 +0100
+Subject: [PATCH] releasenote.md: drop "Removed Platforms" from
+ microcode-20250211
+
+Drop the "Removed Platforms" sub-section from the microcode-20250211
+release notes, as these microcode files are not removed in RHEL.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 8 --------
+ 1 file changed, 8 deletions(-)
+
+diff --git a/releasenote.md b/releasenote.md
+index c407920..3cbdb75 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -55,14 +55,6 @@
+ | SPR-SP         | E5/S3    | 06-8f-08/87 | 2b000603 | 2b000620 | Xeon Scalable Gen4
+ | TWL            | N0       | 06-be-00/19 | 0000001a | 0000001c | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ 
+-### Removed Platforms
+-
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-| SPR-SP         | E2       | 06-8f-05/87 | 2b000603 |          | Xeon Scalable Gen4
+-| SPR-SP         | E3       | 06-8f-06/87 | 2b000603 |          | Xeon Scalable Gen4
+-| RPL            |          | 06-ba-08/e0 | 00004123 |          | Core Gen13
+-
+ ### New Disclosures Updated in Prior Releases
+ 
+ | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-- 
+2.13.6
+
