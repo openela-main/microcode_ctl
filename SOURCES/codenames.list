@@ -325,6 +325,7 @@ Mobile;;Comet Lake;A0;80;a0660;CML;U 6+2;Core Gen10 Mobile;
 Mobile;;Comet Lake;K1;80;a0661;CML;U 6+2 v2;Core Gen10 Mobile;
 Desktop;;Rocket Lake;B0;02;a0671;RKL;S;Core Gen11;
 Mobile;;Meteor Lake;C0;e6;a06a4;MTL;H,U;Core™ Ultra Processor;
+Server;;Sierra Forest;C0;01;a06f3;SRF;SP;Xeon 6700-Series Processors with E-Cores;
 Desktop;;Raptor Lake;B0;32;b0671;RPL;S;Core Gen13;
 Mobile;;Raptor Lake;J0;e0;b06a2;RPL;P 6+8,H 6+8;Core Gen13;
 Mobile;;Raptor Lake;Q0;e0;b06a3;RPL;U 2+8;Core Gen13;
