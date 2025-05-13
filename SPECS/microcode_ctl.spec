@@ -11,8 +11,8 @@
 
 Summary:        CPU microcode updates for Intel x86 processors
 Name:           microcode_ctl
-Version:        20240910
-Release:        1.%{intel_ucode_version}.1%{?dist}
+Version:        %{intel_ucode_version}
+Release:        1%{?dist}
 Epoch:          4
 License:        CC0 and Redistributable, no modification permitted
 URL:            https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
@@ -598,12 +598,13 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Tue Feb 18 2025 Eugene Syromiatnikov <esyr@redhat.com> - 4:20240910-1.20250211.1
+* Tue Feb 18 2025 Eugene Syromiatnikov <esyr@redhat.com> - 4:20250211-1
 - Update Intel CPU microcode to microcode-20250211 release, addresses
   CVE-2023-34440, CVE-2023-43758, CVE-2024-24582, CVE-2024-28047,
   CVE-2024-28127, CVE-2024-29214, CVE-2024-31068, CVE-2024-31157,
-  CVE-2024-37020, CVE-2024-39279, CVE-2024-39355, CVE-2024-36293 (RHEL-79223,
-  RHEL-79224, RHEL-79225, RHEL-79237, RHEL-79241):
+  CVE-2024-37020, CVE-2024-39279, CVE-2024-39355, CVE-2024-36293 (RHEL-79182,
+  RHEL-79186, RHEL-79187, RHEL-79242, RHEL-79243, RHEL-79246, RHEL-79251,
+  RHEL-79252):
   - Addition of 06-bf-06/0x07 microcode (in intel-ucode/06-97-02) at
     revision 0x38;
   - Addition of 06-bf-07/0x07 microcode (in intel-ucode/06-97-02) at
@@ -771,9 +772,9 @@ rm -rf %{buildroot}
   - Update of 06-cf-02/0x87 (EMR-SP A1) microcode from revision 0x21000283
     up to 0x21000291.
 
-* Wed Jan 22 2025 Eugene Syromiatnikov <esyr@redhat.com> - 4:20240910-1.20241112.1
+* Tue Nov 19 2024 Eugene Syromiatnikov <esyr@redhat.com> - 4:20241112-1
 - Update Intel CPU microcode to microcode-20241112 release, addresses
-  CVE-2024-21820, CVE-2024-21853, CVE-2024-23918, CVE-2024-23984 (RHEL-76084):
+  CVE-2024-21820, CVE-2024-21853, CVE-2024-23918, CVE-2024-23984 (RHEL-67336):
   - Update of 06-8f-04/0x87 (SPR-SP E0/S1) microcode (in
     intel-ucode/06-8f-05) from revision 0x2b0005c0 up to 0x2b000603;
   - Update of 06-8f-05/0x87 (SPR-SP E2) microcode from revision 0x2b0005c0
