@@ -1,0 +1,39 @@
+From 98d372cde3eefee6e91414c400d8c3d608b8eb86 Mon Sep 17 00:00:00 2001
+From: Eugene Syromiatnikov <esyr@redhat.com>
+Date: Mon, 2 Jun 2025 18:56:56 +0200
+Subject: [PATCH 17/17] releasenote.md: add information about removal of CLX-SP
+ and EMR-SP microcode
+
+For some reason, information about removal of 06-55-06 (CLX-SP B0)
+and 06-cf-01 (EMR-SP A0) microcode file is missing from microcode-20250512
+release notes.  Document those properly.
+
+* releasenote.md (microcode-20250512): Mention removal of 06-55-06
+and 06-cf-01 microcode files.
+
+Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
+---
+ releasenote.md | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/releasenote.md b/releasenote.md
+index 3c700b5..d42e9ad 100644
+--- a/releasenote.md
++++ b/releasenote.md
+@@ -85,6 +85,13 @@
+ | TWL            | N0       | 06-be-00/19 | 0000001c | 0000001d | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ | WHL-U          | V0       | 06-8e-0c/94 | 000000fc | 00000100 | Core Gen8 Mobile
+ 
++### Removed Platforms
++
++| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
++|:---------------|:---------|:------------|:---------|:---------|:---------
++| CLX-SP         | B0       | 06-55-06/bf | 04003605 |          | Xeon Scalable Gen2
++| EMR-SP         | A0       | 06-cf-01/87 | 21000291 |          | Xeon Scalable Gen5
++
+ 
+ ## [microcode-20250211](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20250211)
+ 
+-- 
+2.13.6
+

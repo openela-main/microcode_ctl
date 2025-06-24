@@ -1,0 +1,43 @@
+Intel Sapphire Rapids Edge Enhanced CPU models (SPR-EE, family 6, model 143,
+stepping 8) had reports of system exhibiting latency spikes when revsions
+0x2b000603 and newer of the microcode are applied.  In order to address this,
+previous 0x2b0005c0 revision of the microcode is provided, and the usage
+of the latest microcode can be disabled (see below), so the older version
+is used instead.
+
+For the reference, SHA1 checksums of 06-8f-08 microcode files containing
+microcode revisions in question are listed below:
+ * 06-8f-08, revision 0x2b0005c0: adf8b6aa2718ff16f3d19d34ec389270073d2b5e
+ * 06-8f-08, revision 0x2b000603: 729014bd05dfb6593152ea7ee12330791bc22bec
+ * 06-8f-08, revision 0x2b000620: e39812f7aff520c79f3f6fa013bd501781d92f8e
+ * 06-8f-08, revision 0x2b000639: 39d91f7a962245ba79fea0611732c86efbd71bc5
+
+Please contact your system vendor for a BIOS/firmware update that contains
+the latest microcode version.
+
+The information regarding disabling microcode update is provided below.
+
+To disable usage of the newer microcode revision for a specific kernel
+version, please create a file "disallow-intel-06-8f-08" inside
+/lib/firmware/<kernel_version> directory, run
+"/usr/libexec/microcode_ctl/update_ucode" to update firmware directory
+used for late microcode updates, and run "dracut -f --kver <kernel_version>"
+so initramfs for this kernel version is regenerated, for example:
+
+    touch /lib/firmware/3.10.0-862.9.1/disallow-intel-06-8f-08
+    /usr/libexec/microcode_ctl/update_ucode
+    dracut -f --kver 3.10.0-862.9.1
+
+To disable usage of the newer microcode revision for all kernels, please create
+file "/etc/microcode_ctl/ucode_with_caveats/disallow-intel-06-8f-08", run
+"/usr/libexec/microcode_ctl/update_ucode" to update firmware directories
+used for late microcode updates, and run "dracut -f --regenerate-all"
+so initramfs images get regenerated, for example:
+
+    mkdir -p /etc/microcode_ctl/ucode_with_caveats
+    touch /etc/microcode_ctl/ucode_with_caveats/disallow-intel-06-8f-0f
+    /usr/libexec/microcode_ctl/update_ucode
+    dracut -f --regenerate-all
+
+Please refer to /usr/share/doc/microcode_ctl/README.caveats for additional
+information.

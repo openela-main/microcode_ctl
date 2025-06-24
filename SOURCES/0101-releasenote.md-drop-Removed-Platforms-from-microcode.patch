@@ -1,22 +1,37 @@
-From 972a7e27320a11d8708052d7b74398305235f668 Mon Sep 17 00:00:00 2001
+From 2d7eaaadd3daa8d9e0493a677890cb7935aca032 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 25 Feb 2025 16:59:48 +0100
 Subject: [PATCH] releasenote.md: drop "Removed Platforms" from
- microcode-20250211
+ microcode-20250512 and microcode-20250211
 
-Drop the "Removed Platforms" sub-section from the microcode-20250211
-release notes, as these microcode files are not removed in RHEL.
+Drop the "Removed Platforms" sub-section from the microcode-20250512
+and microcode-20250211 release notes, as these microcode files
+are not removed in RHEL.
 
 Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
 ---
- releasenote.md | 8 --------
- 1 file changed, 8 deletions(-)
+ releasenote.md | 15 ---------------
+ 1 file changed, 15 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index c407920..3cbdb75 100644
+index d42e9ad..e46f6f0 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -55,14 +55,6 @@
+@@ -85,13 +85,6 @@
+ | TWL            | N0       | 06-be-00/19 | 0000001c | 0000001d | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
+ | WHL-U          | V0       | 06-8e-0c/94 | 000000fc | 00000100 | Core Gen8 Mobile
+ 
+-### Removed Platforms
+-
+-| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+-|:---------------|:---------|:------------|:---------|:---------|:---------
+-| CLX-SP         | B0       | 06-55-06/bf | 04003605 |          | Xeon Scalable Gen2
+-| EMR-SP         | A0       | 06-cf-01/87 | 21000291 |          | Xeon Scalable Gen5
+-
+ 
+ ## [microcode-20250211](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20250211)
+ 
+@@ -149,14 +142,6 @@
  | SPR-SP         | E5/S3    | 06-8f-08/87 | 2b000603 | 2b000620 | Xeon Scalable Gen4
  | TWL            | N0       | 06-be-00/19 | 0000001a | 0000001c | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  

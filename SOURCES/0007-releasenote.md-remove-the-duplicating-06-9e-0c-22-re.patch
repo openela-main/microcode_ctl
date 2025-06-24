@@ -1,7 +1,7 @@
-From 680d51126f93a928ae375757054c6d65891cc4b9 Mon Sep 17 00:00:00 2001
+From ecf23f715476f5e928bfe6605389695c6875404e Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 22 Aug 2023 17:34:43 +0200
-Subject: [PATCH 07/16] releasenote.md: remove the duplicating 06-9e-0c/22
+Subject: [PATCH 07/17] releasenote.md: remove the duplicating 06-9e-0c/22
  record
 
 CFL-S stepping P0 (06-9e-0c/22) is already listed as "CFL-H/S"
@@ -16,10 +16,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 1 deletion(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 0f441a5..7986f66 100644
+index f32d54c..a59f67c 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -497,7 +497,6 @@
+@@ -584,7 +584,6 @@
  | CFL-H/S/E3     | U0       | 06-9e-0a/22 | 000000f2 | 000000f4 | Core Gen8 Desktop, Mobile, Xeon E
  | CFL-H/S        | P0       | 06-9e-0c/22 | 000000f2 | 000000f4 | Core Gen9
  | CFL-S          | B0       | 06-9e-0b/02 | 000000f2 | 000000f4 | Core Gen8
