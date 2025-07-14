@@ -1,7 +1,7 @@
-From 2b535c893c9693bdb4e0ac1fe919f3a8f3d29b29 Mon Sep 17 00:00:00 2001
+From 1bbcdec78c5de4f4c0128a75fab1a5ab44ea1dd2 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 18 Feb 2025 16:54:03 +0100
-Subject: [PATCH 12/16] releasenote.md: add information about 06-ba-08
+Subject: [PATCH 12/17] releasenote.md: add information about 06-ba-08
  microcode file
 
 This microcode file was first appeared as part of microcode-20240312,
@@ -38,10 +38,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 4 insertions(+)
 
 diff --git a/releasenote.md b/releasenote.md
-index 38934ad..a4ce9a4 100644
+index 5184613..1e212cc 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -61,6 +61,7 @@
+@@ -148,6 +148,7 @@
  |:---------------|:---------|:------------|:---------|:---------|:---------
  | SPR-SP         | E2       | 06-8f-05/87 | 2b000603 |          | Xeon Scalable Gen4
  | SPR-SP         | E3       | 06-8f-06/87 | 2b000603 |          | Xeon Scalable Gen4
@@ -49,7 +49,7 @@ index 38934ad..a4ce9a4 100644
  
  ### New Disclosures Updated in Prior Releases
  
-@@ -103,6 +104,7 @@
+@@ -190,6 +191,7 @@
  | EMR-SP         | A0       | 06-cf-01/87 | 21000230 | 21000283 | Xeon Scalable Gen5
  | EMR-SP         | A1       | 06-cf-02/87 | 21000230 | 21000283 | Xeon Scalable Gen5
  | MTL            | C0       | 06-aa-04/e6 | 0000001f | 00000020 | Core™ Ultra Processor
@@ -57,7 +57,7 @@ index 38934ad..a4ce9a4 100644
  | RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 | 00004122 | 00004123 | Core Gen13
  | RPL-HX/S       | C0       | 06-bf-02/07 | 00000036 | 00000037 | Core Gen13/Gen14
  | RPL-S          | H0       | 06-bf-05/07 | 00000036 | 00000037 | Core Gen13/Gen14
-@@ -166,6 +168,7 @@
+@@ -253,6 +255,7 @@
  | ADL            | R0       | 06-9a-04/80 | 00000433 | 00000434 | Core Gen12
  | ADL-N          | N0       | 06-be-00/11 | 00000017 | 0000001a | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  | MTL            | C0       | 06-aa-04/e6 | 0000001e | 0000001f | Core™ Ultra Processor
@@ -65,7 +65,7 @@ index 38934ad..a4ce9a4 100644
  | RPL-E/HX/S     | B0       | 06-b7-01/32 | 00000123 | 00000129 | Core Gen13/Gen14
  | RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 | 00004121 | 00004122 | Core Gen13
  | RPL-HX/S       | C0       | 06-bf-02/07 | 00000035 | 00000036 | Core Gen13/Gen14
-@@ -351,6 +354,7 @@
+@@ -438,6 +441,7 @@
  | EMR-SP         | A-1      | 06-cf-02/87 |          | 21000200 | Xeon Scalable Gen5
  | EMR-SP         | A-0      | 06-cf-01/87 |          | 21000200 | Xeon Scalable Gen5
  | MTL            | C-0      | 06-aa-04/e6 |          | 0000001c | Core™ Ultra Processor

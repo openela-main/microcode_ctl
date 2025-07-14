@@ -1,0 +1,9 @@
+model GenuineIntel 06-8f-08
+path intel-ucode/06-87-08
+## A possible way to disable 0x2b000603 and newer microcode on SPR-EE by default
+## Based on https://cdrdv2.intel.com/v1/dl/getcontent/772415
+## and https://cdrdv2.intel.com/v1/dl/getcontent/784461
+## "fail-any" and not "success-eny" as imposing the problematic microcode
+## versions only affect latencies and not system stability.
+#pci_config_val mode=fail-any bus=0x1f device=0x1e function=3 vid=0x8086 offset=0x94 size=4 mask=0xc0 val=0x00,0x80
+dependency required intel

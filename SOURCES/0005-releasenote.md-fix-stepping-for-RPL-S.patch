@@ -1,7 +1,7 @@
-From 008c8fb7a9e7cd8fe6531cf5a6e3fa7b113be8c1 Mon Sep 17 00:00:00 2001
+From 42f7f187ecfaf226455a294a17c2209f31e58941 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Thu, 10 Aug 2023 18:49:54 +0200
-Subject: [PATCH 05/16] releasenote.md: fix stepping for RPL-S
+Subject: [PATCH 05/17] releasenote.md: fix stepping for RPL-S
 
 microcode-20221108, microcode-20230214, microcode-20230512,
 and microcode-20230512-rev2 release notes (incorrectly) state RPL-S
@@ -22,10 +22,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 78a9ea8..bd3bbff 100644
+index b63eb8a..3cf6eea 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -594,7 +594,7 @@
+@@ -681,7 +681,7 @@
  | RKL-S          | B0       | 06-a7-01/02 | 00000057 | 00000058 | Core Gen11
  | RPL-H 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
  | RPL-P 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
@@ -34,7 +34,7 @@ index 78a9ea8..bd3bbff 100644
  | RPL-U 2+8      | Q0       | 06-ba-03/c0 | 0000410e | 00004112 | Core Gen13
  | SKX-D          | H0       | 06-55-04/b7 | 02006e05 | 02006f05 | Xeon D-21xx
  | SKX-SP         | B1       | 06-55-03/97 | 01000161 | 01000171 | Xeon Scalable
-@@ -660,7 +660,7 @@
+@@ -747,7 +747,7 @@
  | RKL-S          | B0       | 06-a7-01/02 | 00000057 | 00000058 | Core Gen11
  | RPL-H 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
  | RPL-P 6+8      | J0       | 06-ba-02/c0 | 0000410e | 00004112 | Core Gen13
@@ -43,7 +43,7 @@ index 78a9ea8..bd3bbff 100644
  | RPL-U 2+8      | Q0       | 06-ba-03/c0 | 0000410e | 00004112 | Core Gen13
  | SKX-D          | H0       | 06-55-04/b7 |          | 02006f05 | Xeon D-21xx
  | SKX-SP         | B1       | 06-55-03/97 | 01000161 | 01000171 | Xeon Scalable
-@@ -722,7 +722,7 @@
+@@ -809,7 +809,7 @@
  | JSL            | A0/A1    | 06-9c-00/01 | 24000023 | 24000024 | Pentium N6000/N6005, Celeron N4500/N4505/N5100/N5105
  | LKF            | B2/B3    | 06-8a-01/10 | 00000031 | 00000032 | Core w/Hybrid Technology
  | RKL-S          | B0       | 06-a7-01/02 | 00000056 | 00000057 | Core Gen11
@@ -52,7 +52,7 @@ index 78a9ea8..bd3bbff 100644
  | SKX-SP         | B1       | 06-55-03/97 | 0100015e | 01000161 | Xeon Scalable
  
  
-@@ -743,7 +743,7 @@
+@@ -830,7 +830,7 @@
  | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
  |:---------------|:---------|:------------|:---------|:---------|:---------
  | ICL-D          | B0       | 06-6c-01/10 |          | 01000201 | Xeon D-17xx, D-27xx

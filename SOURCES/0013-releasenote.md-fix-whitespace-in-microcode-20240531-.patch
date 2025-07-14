@@ -1,7 +1,7 @@
-From 01fcfaa73eba439b25be9b71d121a0c6b5cc70b8 Mon Sep 17 00:00:00 2001
+From 64c15b33e8e70fbd2dd159bff14cc9e40d9e1f06 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 18 Feb 2025 18:26:51 +0100
-Subject: [PATCH 13/16] releasenote.md: fix whitespace in microcode-20240531
+Subject: [PATCH 13/17] releasenote.md: fix whitespace in microcode-20240531
  release notes
 
 * releasenote.md (microcode-20240531): Add missing spaces in the
@@ -13,10 +13,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index a4ce9a4..9e06b53 100644
+index 1e212cc..a315d31 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -300,8 +300,8 @@
+@@ -387,8 +387,8 @@
  | ADL-N          | N0       | 06-be-00/11 | 00000015 | 00000017 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  | AZB            | A0       | 06-9a-04/40 | 00000005 | 00000007 | Intel(R) Atom(R) C1100
  | AZB            | R0       | 06-9a-04/40 | 00000005 | 00000007 | Intel(R) Atom(R) C1100

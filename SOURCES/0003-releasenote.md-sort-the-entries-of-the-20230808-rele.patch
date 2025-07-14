@@ -1,7 +1,7 @@
-From feb9a3a9c77dea2db3d1a87f52d1063dea226db3 Mon Sep 17 00:00:00 2001
+From a33c2383a875d9742be62b1cf7dc3b0ec3a7ca4d Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Thu, 10 Aug 2023 18:37:21 +0200
-Subject: [PATCH 03/16] releasenote.md: sort the entries of the 20230808
+Subject: [PATCH 03/17] releasenote.md: sort the entries of the 20230808
  release lexicographically
 
 microcode-20230214 seemingly (but not fully;  the "New Platforms" section
@@ -20,10 +20,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 40 insertions(+), 40 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 096da93..3fbc5cf 100644
+index da3981f..54ef6fa 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -483,55 +483,55 @@
+@@ -570,55 +570,55 @@
  
  | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
  |:---------------|:---------|:------------|:---------|:---------|:---------
