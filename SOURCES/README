@@ -1,0 +1,51 @@
+The microcode_ctl package contains microcode files (vendor-provided binary data
+and/or code in proprietary format that affects behaviour of a device) for Intel
+CPUs that may be loaded into the CPU during boot.
+
+This directory contains information regarding various aspects of the provided
+microcode files and their usage.
+
+ * LICENSE.intel-ucode
+   "license" file from the Intel x86 CPU microcode archive.
+ * README
+   This file.
+ * README.caveats
+   Caveats (mechanism for enabling/disabling usage of sets of microcode files
+   based on caveat configuration and user preferences) documentation.
+   Also contains general information about microcode update behaviour and links
+   with additional information about the relevant microarchitectural
+   vulnerabilities.
+ * README.intel-ucode
+   "README.md" file from the Intel x86 CPU microcode archive.
+ * RELEASE_NOTES.intel-ucode
+   "releasenote.md" file from the Intel x86 CPU microcode archive.
+ * SECURITY.intel-ucode
+   "security.md" file from the Intel x86 CPU microcode archive.
+ * SUMMARY.intel-ucode
+   Information about supplied microcode files extracted from their headers,
+   in a table form.  Columns have the following meaning:
+    * "Path": path to the microcode file under one of the following directories:
+       * /usr/share/microcode_ctl/ucode_with_caveats/intel
+       * /usr/share/microcode_ctl/ucode_with_caveats
+       * /usr/share/microcode_ctl
+       * /lib/firmware
+       * /etc/firmware
+    * "Offset": offset of the microcode blob within the micocode file in bytes.
+    * "Ext. Offset": offset of the extended signature header within
+      the microcode file in bytes.
+    * "Data Size": size of microcode data in bytes.  0 means 2000 bytes.
+    * "Total Size": size of microcode blob in bytes, incuding headers.
+      0 means 2048 bytes.
+    * "CPUID": CPU ID signature (in format returned by the CPUID instruction).
+    * "Platform ID Mask": mask of suitable Platform IDs (provided in bits
+      52..50 of MSR 0x17).
+    * "Revision": microcode revision.
+    * "Date": microcode creation date.
+    * "Checksum": sum (in base 1<< 32) of all 32-bit values comprising
+      the microcode (from Offset up to Offset + Total Size).
+    * "Codenames": list of known CPU codenames associated with the CPUID
+      and Platform ID Mask combination.
+   Please refer to README.cavets, section "Microcode file structure"
+   for additional information regarding microcode header fields.
+ * caveats
+   Directory that contains readme files for each specific caveat.
