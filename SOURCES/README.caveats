@@ -651,6 +651,23 @@ Minimum versions of the kernel package that contain the fix:
  - RHEL 7.2: 3.10.0-327.73.1
 
 
+Intel Sapphire Rapids Edge Enhanced caveat
+------------------------------------------
+Intel Sapphire Rapids Edge Enhanced CPU models (SPR-EE, family 6, model 143,
+stepping 8) had reports of system exhibiting latency spikes when revsions
+0x2b000603 and newer of the microcode are applied.  In order to address this,
+previous 0x2b0005c0 revision of the microcode is provided, and the usage
+of the latest microcode can be disabled, so the older version is used instead.
+
+Caveat names: intel-06-8f-08
+
+Affected microcode: intel-ucode/06-8f-08.
+
+Dependencies: intel
+
+Mitigation: None; the latest revision of the microcode file is used by default.
+
+
 
 Additional information
 ======================

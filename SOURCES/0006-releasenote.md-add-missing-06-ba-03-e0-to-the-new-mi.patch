@@ -1,7 +1,7 @@
-From a050fef74a28611bdc533849baf9189413dc029c Mon Sep 17 00:00:00 2001
+From 1f76d064dfc79084f93187b131cc73b1735378da Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 22 Aug 2023 16:48:54 +0200
-Subject: [PATCH 06/16] releasenote.md: add missing 06-ba-03/e0 to the new
+Subject: [PATCH 06/17] releasenote.md: add missing 06-ba-03/e0 to the new
  microcode section
 
 microcode-20230808 release notes for CPUIDs 06-ba-02/e0 (RPL-H/P/PX 6+8),
@@ -23,10 +23,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/releasenote.md b/releasenote.md
-index bd3bbff..0f441a5 100644
+index 3cf6eea..f32d54c 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -478,6 +478,7 @@
+@@ -565,6 +565,7 @@
  |:---------------|:---------|:------------|:---------|:---------|:---------
  | ADL-N          | A0       | 06-be-00/11 |          | 00000011 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  | RPL-H/P/PX 6+8 | J0       | 06-ba-02/e0 |          | 00004119 | Core Gen13

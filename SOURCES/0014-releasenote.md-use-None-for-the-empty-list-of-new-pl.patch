@@ -1,7 +1,7 @@
-From 1504477d81e0b914c9cc9e275c5c16eb488fdf70 Mon Sep 17 00:00:00 2001
+From bb4cb428da5cbc22d871f28bbe25aed521b81832 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 18 Feb 2025 19:59:16 +0100
-Subject: [PATCH 14/16] releasenote.md: use "None" for the empty list of new
+Subject: [PATCH 14/17] releasenote.md: use "None" for the empty list of new
  platforms
 
 Having an empty table (with an additional empty line, compared
@@ -18,10 +18,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 6 insertions(+), 18 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 9e06b53..e9d3cb2 100644
+index a315d31..0f670a7 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -89,9 +89,7 @@
+@@ -176,9 +176,7 @@
  
  ### New Platforms
  
@@ -32,7 +32,7 @@ index 9e06b53..e9d3cb2 100644
  
  ### Updated Platforms
  
-@@ -130,9 +128,7 @@
+@@ -217,9 +215,7 @@
  
  ### New Platforms
  
@@ -43,7 +43,7 @@ index 9e06b53..e9d3cb2 100644
  
  ### Updated Platforms
  
-@@ -209,9 +205,7 @@
+@@ -296,9 +292,7 @@
  
  ### New Platforms
  
@@ -54,7 +54,7 @@ index 9e06b53..e9d3cb2 100644
  
  ### Updated Platforms
  
-@@ -259,9 +253,7 @@
+@@ -346,9 +340,7 @@
  
  ### New Platforms
  
@@ -65,7 +65,7 @@ index 9e06b53..e9d3cb2 100644
  
  ### Updated Platforms
  
-@@ -285,9 +277,7 @@
+@@ -372,9 +364,7 @@
  
  ### New Platforms
  
@@ -76,7 +76,7 @@ index 9e06b53..e9d3cb2 100644
  
  ### Updated Platforms
  
-@@ -431,9 +421,7 @@
+@@ -518,9 +508,7 @@
  
  ### New Platforms
  

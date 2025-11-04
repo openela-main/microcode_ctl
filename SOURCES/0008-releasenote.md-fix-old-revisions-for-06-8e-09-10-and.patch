@@ -1,7 +1,7 @@
-From 98f13ea923726a534982c6a41960263910c24d8d Mon Sep 17 00:00:00 2001
+From 2721948c99069b34801845280714a9eb260ceb15 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Tue, 22 Aug 2023 17:36:23 +0200
-Subject: [PATCH 08/16] releasenote.md: fix old revisions for 06-8e-09/10 and
+Subject: [PATCH 08/17] releasenote.md: fix old revisions for 06-8e-09/10 and
  06-55-04/b7 entries
 
 The values provided are from the microcode-20230214 release, even though
@@ -19,10 +19,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 7986f66..b2c1058 100644
+index a59f67c..21038d8 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -491,7 +491,7 @@
+@@ -578,7 +578,7 @@
  | ADL            | L0       | 06-9a-03/80 | 0000042a | 0000042c | Core Gen12
  | ADL            | L0       | 06-9a-04/80 | 0000042a | 0000042c | Core Gen12
  | ADL-N          | A0       | 06-be-00/11 |          | 00000011 | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
@@ -31,7 +31,7 @@ index 7986f66..b2c1058 100644
  | AML-Y42        | V0       | 06-8e-0c/94 | 000000f6 | 000000f8 | Core Gen10 Mobile
  | CFL-H          | R0       | 06-9e-0d/22 | 000000f8 | 000000fa | Core Gen9 Mobile
  | CFL-H/S/E3     | U0       | 06-9e-0a/22 | 000000f2 | 000000f4 | Core Gen8 Desktop, Mobile, Xeon E
-@@ -520,7 +520,7 @@
+@@ -607,7 +607,7 @@
  | RPL-U 2+8      | Q0       | 06-ba-03/e0 |          | 00004119 | Core Gen13
  | SKX-D          | H0       | 06-55-04/b7 | 02006f05 | 02007006 | Xeon D-21xx
  | SKX-SP         | B1       | 06-55-03/97 | 01000171 | 01000181 | Xeon Scalable

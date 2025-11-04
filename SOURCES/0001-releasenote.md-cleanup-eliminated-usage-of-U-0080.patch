@@ -1,7 +1,7 @@
-From 38e1f92bdb74ccf5bf672daaa83c946bcfb84802 Mon Sep 17 00:00:00 2001
+From 8bed0de45267fff5c64b4da145ae2464ec578bb9 Mon Sep 17 00:00:00 2001
 From: Eugene Syromiatnikov <esyr@redhat.com>
 Date: Thu, 10 Aug 2023 15:20:03 +0200
-Subject: [PATCH 01/16] releasenote.md: cleanup eliminated usage of U+0080
+Subject: [PATCH 01/17] releasenote.md: cleanup eliminated usage of U+0080
 
 microcode-20231114 release has removed the baffling usage of U+0080;
 however, unfortunately, it also has misaligned the "New Platforms" table
@@ -15,10 +15,10 @@ Signed-off-by: Eugene Syromiatnikov <esyr@redhat.com>
  1 file changed, 21 insertions(+), 21 deletions(-)
 
 diff --git a/releasenote.md b/releasenote.md
-index 300576b..a8ab4e5 100644
+index c1e4821..339d3fb 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -484,8 +484,8 @@
+@@ -571,8 +571,8 @@
  
  | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
  |:---------------|:---------|:------------|:---------|:---------|:---------
@@ -29,7 +29,7 @@ index 300576b..a8ab4e5 100644
  
  ### Updated Platforms
  
-@@ -715,25 +715,25 @@
+@@ -802,25 +802,25 @@
  
  | Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
  |:---------------|:---------|:------------|:---------|:---------|:---------

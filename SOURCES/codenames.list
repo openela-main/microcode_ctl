@@ -1,6 +1,7 @@
 # format=extended
 # SPDX-License-Identifier: CC0-1.0
 # Segment; Unused; Codename; Stepping; PF; CPUID; Abbreviation; Variant(s); Families; Models
+# The lines that start with "#!" are based on speculative information
 
 Server;;Pentium Pro;B0;00;611;;;Pentium Pro;
 Server;;Pentium Pro;C0;00;612;;;Pentium Pro;
@@ -287,9 +288,11 @@ Mobile;;Comet Lake;V0;94;806ec;CML;U 4+2;Core Gen10 Mobile;
 Mobile;;Whiskey Lake;W0;d0;806eb;WHL;U;Core Gen8 Mobile;
 Mobile;;Whiskey Lake;V0;94;806ec;WHL;U;Core Gen8 Mobile;
 Mobile;;Whiskey Lake;V0;94;806ed;WHL;U;Core Gen8 Mobile;
+#!Server;;Sapphire Rapids;B0;10;806f4;SPR;HBM;Xeon Max (ES);
 Server;;Sapphire Rapids;E0,S1;87;806f4;SPR;SP;Xeon Scalable Gen4;
 Server;;Sapphire Rapids;B1;10;806f5;SPR;HBM;Xeon Max;
 Server;;Sapphire Rapids;E2;87;806f5;SPR;SP;Xeon Scalable Gen4;
+#!Server;;Sapphire Rapids;B2;10;806f6;SPR;HBM;Xeon Max (ES);
 Server;;Sapphire Rapids;E3;87;806f6;SPR;SP;Xeon Scalable Gen4;
 Server;;Sapphire Rapids;E4,S2;87;806f7;SPR;SP;Xeon Scalable Gen4;
 Server;;Sapphire Rapids;B3;10;806f8;SPR;HBM;Xeon Max;
@@ -325,13 +328,26 @@ Mobile;;Comet Lake;A0;80;a0660;CML;U 6+2;Core Gen10 Mobile;
 Mobile;;Comet Lake;K1;80;a0661;CML;U 6+2 v2;Core Gen10 Mobile;
 Desktop;;Rocket Lake;B0;02;a0671;RKL;S;Core Gen11;
 Mobile;;Meteor Lake;C0;e6;a06a4;MTL;H,U;Core™ Ultra Processor;
+Server;;Granite Ridge;H0;20;a06d1;GNR;AP,SP;Xeon Scalable Gen6;
+Server;;Granite Ridge;B0;95;a06d1;GNR;AP,SP;Xeon Scalable Gen6;
 Server;;Sierra Forest;C0;01;a06f3;SRF;SP;Xeon 6700-Series Processors with E-Cores;
+Mobile;;Arrow Lake;A1;80;b0650;ARL;U;Core™ Ultra Processor (Series2)
 Desktop;;Raptor Lake;B0;32;b0671;RPL;S;Core Gen13;
+#!Desktop;;Raptor Lake;??;32;b0674;RPL;S;Core Gen13;
 Mobile;;Raptor Lake;J0;e0;b06a2;RPL;P 6+8,H 6+8;Core Gen13;
 Mobile;;Raptor Lake;Q0;e0;b06a3;RPL;U 2+8;Core Gen13;
+#!Mobile;;Raptor Lake;M0;e0;b06a8;RPL;P 6+8,H 6+8;Core Gen13;
+Mobile;;Lunar Lake;B0;80;b06d1;LNL;;Core™ Ultra 200 V Series Processor;
 SOC;;Alder Lake;A0;01;b06e0;ADL;N;;Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
-Desktop;;Alder Lake;C0;03;b06f2;ADL;;Core Gen12;
-Desktop;;Alder Lake;C0;03;b06f5;ADL;;Core Gen12;
+Desktop;;Alder Lake;C0;07;b06f2;ADL;;Core Gen12;
+Desktop;;Alder Lake;C0;07;b06f5;ADL;;Core Gen12;
+#!Desktop;;Bartlett Lake;??;07;b06f6;BTL;S;Core™ processor (Series 2);
+#!Desktop;;Bartlett Lake;??;07;b06f7;BTL;S;Core™ processor (Series 2);
+Mobile;;Arrow Lake;A1;82;c0652;ARL;H;Core™ Ultra Processor (Series2);
+Desktop;;Arrow Lake;B0;82;c0662;ARL;S;Core™ Ultra Processor (Series2);
+Mobile;;Arrow Lake;B0;82;c0662;ARL;HX 8P;Core™ Ultra Processor (Series2);
+#!Desktop;;Arrow Lake;??;82;c0664;ARL;S;Core™ Ultra Processor (Series2);
+#!Desktop;;Arrow Lake;??;82;c06a2;ARL;S;Core™ Ultra Processor (Series2);
 Server;;Emerald Rapids;A0;87;c06f1;EMR;SP;Xeon Scalable Gen5;
 Server;;Emerald Rapids;A1;87;c06f2;EMR;SP;Xeon Scalable Gen5;
 
