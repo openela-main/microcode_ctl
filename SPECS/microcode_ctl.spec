@@ -1,4 +1,4 @@
-%define intel_ucode_version 20250512
+%define intel_ucode_version 20250812
 
 %define caveat_dir %{_datarootdir}/microcode_ctl/ucode_with_caveats
 %define microcode_ctl_libexec %{_libexecdir}/microcode_ctl
@@ -636,6 +636,83 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Aug 26 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250211-1.20250812.1
+- Update Intel CPU microcode to microcode-20250812 release
+  - Update of 06-6a-06/0x87 (ICX-SP D0) microcode from revision 0xd000404
+    up to 0xd000410;
+  - Update of 06-6c-01/0x10 (ICL-D B0) microcode from revision 0x10002d0
+    up to 0x10002e0;
+  - Update of 06-8f-04/0x87 (SPR-SP E0/S1) microcode (in
+    intel-ucode/06-8f-07) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-05/0x87 (SPR-SP E2) microcode (in
+    intel-ucode/06-8f-07) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-06/0x87 (SPR-SP E3) microcode (in
+    intel-ucode/06-8f-07) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-07/0x87 (SPR-SP E4/S2) microcode from revision
+    0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-08/0x87 (SPR-SP E5/S3) microcode (in
+    intel-ucode/06-8f-07) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-04/0x10 microcode (in intel-ucode/06-8f-08) from
+    revision 0x2c0003f7 up to 0x2c000401;
+  - Update of 06-8f-04/0x87 (SPR-SP E0/S1) microcode (in
+    intel-ucode/06-8f-08) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-05/0x10 (SPR-HBM B1) microcode (in
+    intel-ucode/06-8f-08) from revision 0x2c0003f7 up to 0x2c000401;
+  - Update of 06-8f-05/0x87 (SPR-SP E2) microcode (in
+    intel-ucode/06-8f-08) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-06/0x10 microcode (in intel-ucode/06-8f-08) from
+    revision 0x2c0003f7 up to 0x2c000401;
+  - Update of 06-8f-06/0x87 (SPR-SP E3) microcode (in
+    intel-ucode/06-8f-08) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-07/0x87 (SPR-SP E4/S2) microcode (in
+    intel-ucode/06-8f-08) from revision 0x2b000639 up to 0x2b000643;
+  - Update of 06-8f-08/0x10 (SPR-HBM B3) microcode from revision
+    0x2c0003f7 up to 0x2c000401;
+  - Update of 06-8f-08/0x87 (SPR-SP E5/S3) microcode from revision
+    0x2b000639 up to 0x2b000643;
+  - Update of 06-aa-04/0xe6 (MTL-H/U C0) microcode from revision 0x24
+    up to 0x25;
+  - Update of 06-ad-01/0x20 (GNR-AP/SP H0) microcode from revision
+    0xa0000d1 up to 0xa000100;
+  - Update of 06-ad-01/0x95 (GNR-AP/SP B0) microcode from revision
+    0x10003a2 up to 0x10003d0;
+  - Update of 06-af-03/0x01 (SRF-SP C0) microcode from revision 0x3000341
+    up to 0x3000362;
+  - Update of 06-ba-02/0xe0 (RPL-H 6+8/P 6+8 J0) microcode from revision
+    0x4128 up to 0x4129;
+  - Update of 06-ba-03/0xe0 (RPL-U 2+8 Q0) microcode (in
+    intel-ucode/06-ba-02) from revision 0x4128 up to 0x4129;
+  - Update of 06-ba-08/0xe0 microcode (in intel-ucode/06-ba-02) from
+    revision 0x4128 up to 0x4129;
+  - Update of 06-ba-02/0xe0 (RPL-H 6+8/P 6+8 J0) microcode (in
+    intel-ucode/06-ba-03) from revision 0x4128 up to 0x4129;
+  - Update of 06-ba-03/0xe0 (RPL-U 2+8 Q0) microcode from revision 0x4128
+    up to 0x4129;
+  - Update of 06-ba-08/0xe0 microcode (in intel-ucode/06-ba-03) from
+    revision 0x4128 up to 0x4129;
+  - Update of 06-bd-01/0x80 (LNL B0) microcode from revision 0x11f up
+    to 0x123;
+  - Update of 06-c5-02/0x82 (ARL-H A1) microcode from revision 0x118 up
+    to 0x119;
+  - Update of 06-c6-02/0x82 (ARL-HX 8P/S B0) microcode (in
+    intel-ucode/06-c5-02) from revision 0x118 up to 0x119;
+  - Update of 06-c6-04/0x82 microcode (in intel-ucode/06-c5-02) from
+    revision 0x118 up to 0x119;
+  - Update of 06-ca-02/0x82 microcode (in intel-ucode/06-c5-02) from
+    revision 0x118 up to 0x119;
+  - Update of 06-c5-02/0x82 (ARL-H A1) microcode (in intel-ucode/06-c6-02)
+    from revision 0x118 up to 0x119;
+  - Update of 06-c6-02/0x82 (ARL-HX 8P/S B0) microcode from revision
+    0x118 up to 0x119;
+  - Update of 06-c6-04/0x82 microcode (in intel-ucode/06-c6-02) from
+    revision 0x118 up to 0x119;
+  - Update of 06-ca-02/0x82 microcode (in intel-ucode/06-c6-02) from
+    revision 0x118 up to 0x119;
+  - Update of 06-cf-01/0x87 (EMR-SP A0) microcode (in
+    intel-ucode/06-cf-02) from revision 0x210002a9 up to 0x210002b3;
+  - Update of 06-cf-02/0x87 (EMR-SP A1) microcode from revision 0x210002a9
+    up to 0x210002b3.
+
 * Tue Jun 10 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250211-1.20250512.1
 - Add a caveat to provide ability to persistently disable SPR-EE updates
   beyond 0x2b0005c0 on systems where absence of latency spikes
