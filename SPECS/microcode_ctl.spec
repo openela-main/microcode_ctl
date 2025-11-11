@@ -11,8 +11,8 @@
 
 Summary:        CPU microcode updates for Intel x86 processors
 Name:           microcode_ctl
-Version:        20250211
-Release:        1.%{intel_ucode_version}.1%{?dist}
+Version:        %{intel_ucode_version}
+Release:        1%{?dist}
 Epoch:          4
 License:        CC0 and Redistributable, no modification permitted
 URL:            https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
@@ -636,7 +636,7 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Tue Aug 26 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250211-1.20250812.1
+* Wed Aug 20 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1
 - Update Intel CPU microcode to microcode-20250812 release
   - Update of 06-6a-06/0x87 (ICX-SP D0) microcode from revision 0xd000404
     up to 0xd000410;
@@ -713,13 +713,14 @@ rm -rf %{buildroot}
   - Update of 06-cf-02/0x87 (EMR-SP A1) microcode from revision 0x210002a9
     up to 0x210002b3.
 
-* Tue Jun 10 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250211-1.20250512.1
+* Tue Jun 10 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250512-1
 - Add a caveat to provide ability to persistently disable SPR-EE updates
   beyond 0x2b0005c0 on systems where absence of latency spikes
   is more important than lack of the latest CVE mitigations.
 - Update Intel CPU microcode to microcode-20250512 release, addresses
   CVE-2024-28956, CVE-2025-20103, CVE-2025-20054, CVE-2024-43420,
   CVE-2025-20623, CVE-2024-45332, CVE-2025-24495, CVE-2025-20012
+  (RHEL-94294, RHEL-91231, RHEL-91224, RHEL-91224, RHEL-91239)
   - Addition of 06-8f-04/0x10 microcode (in
     intel-06-8f-08/intel-ucode/06-8f-08) at revision 0x2c0003f7;
   - Addition of 06-8f-04/0x87 (SPR-SP E0/S1) microcode (in
