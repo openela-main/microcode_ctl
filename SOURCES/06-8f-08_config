@@ -1,5 +1,5 @@
 model GenuineIntel 06-8f-08
-path intel-ucode/06-87-08
+path intel-ucode/06-8f-08
 ## A possible way to disable 0x2b000603 and newer microcode on SPR-EE by default
 ## Based on https://cdrdv2.intel.com/v1/dl/getcontent/772415
 ## and https://cdrdv2.intel.com/v1/dl/getcontent/784461
