@@ -19,14 +19,6 @@ diff --git a/releasenote.md b/releasenote.md
 index 0cdfa20..3c700b5 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -156,6 +156,7 @@
- |:---------------|:---------|:------------|:---------|:---------|:---------
- | CFL-H/S        | P0       | 06-9e-0c/22 | 000000f6 | 000000f8 | Core Gen9
- 
-+
- ## [microcode-20241112](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20241112)
- 
- ### Purpose
 @@ -164,6 +165,7 @@
  - Security updates for [INTEL-SA-01079](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01079.html)
  - Updated security updates for [INTEL-SA-01097](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01097.html)
