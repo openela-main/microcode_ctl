@@ -1,4 +1,4 @@
-%define intel_ucode_version 20250812
+%define intel_ucode_version 20251111
 %global debug_package %{nil}
 
 %define caveat_dir %{_datarootdir}/microcode_ctl/ucode_with_caveats
@@ -636,6 +636,38 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Nov 24 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20251111-1
+- Fix typo in /usr/share/microcode_ctl/ucode_with_caveats/intel-06-8f-08/config
+- Update Intel CPU microcode to microcode-20251111 release (RHEL-128250)
+- New microcode files (in hex):
+  06-ae-01: Granite Rapids-D: revision 1000273
+- Microcode files (/platform_mask shown) with revision updates (in hex):
+  06-8f-07/87: Sapphire Rapids: 2b000643 to 2b000650
+  06-8f-08/10: Sapphire Rapids with HBM: 2c000401 to 2c000410
+  06-8f-08/87: Sapphire Rapids: 2b000643 to 2b000650
+  06-97-02/07: Alder Lake: 003a to 003d
+  06-97-05/07: Alder Lake: 003a to 003d
+  06-9a-03/80: Alder Lake-L: 0437 to 043a
+  06-9a-04/80: Alder Lake-L: 0437 to 043a
+  06-9a-04/40: Arizona Beach (Atom C11xx): 000a to 000b
+  06-ad-01/95: Granite Rapids-X: 10003d0 to 10003f0
+  06-ad-01/20: Granite Rapids-X: a000100 to a000124
+  06-af-03/01: Crestmont (Sierra Forest): 3000362 to 3000382
+  06-b7-01/32: Raptor Lake: 012f to 0132
+  06-ba-02/e0: Raptor Lake-P: 4129 to 6133
+  06-ba-03/e0: Raptor Lake-P: 4129 to 6133
+  06-bd-01/80: Lunar Lake: 0123 to 0125
+  06-be-00/19: Gracemont (Alder Lake-N): 001d to 001e
+  06-bf-02/07: Raptor Lake-S: 003a to 003d
+  06-bf-05/07: Raptor Lake-S: 003a to 003d
+  06-c5-02/82: Arrow Lake-H: 0119 to 011a
+  06-c6-02/82: Arrow Lake: 0119 to 011a
+  06-cf-02/87: Emerald Rapids: 210002b3 to 210002c0
+- Fixes errata RPL070/ADL083/LNL047/ARL054/SPR154/EMR147:
+  "REP SCASB, REP CMPSB may return incorrect results when racing
+  memory access with another core or thread" on Raptor Lake,
+  Alder Lake, Lunar Lake, Arrow Lake, Sapphire Rapids, Emerald Rapids.
+
 * Wed Aug 20 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1
 - Update Intel CPU microcode to microcode-20250812 release
   - Update of 06-6a-06/0x87 (ICX-SP D0) microcode from revision 0xd000404

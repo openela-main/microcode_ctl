@@ -17,7 +17,7 @@ diff --git a/releasenote.md b/releasenote.md
 index d42e9ad..e46f6f0 100644
 --- a/releasenote.md
 +++ b/releasenote.md
-@@ -85,13 +85,6 @@
+@@ -188,13 +188,6 @@
  | TWL            | N0       | 06-be-00/19 | 0000001c | 0000001d | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  | WHL-U          | V0       | 06-8e-0c/94 | 000000fc | 00000100 | Core Gen8 Mobile
  
@@ -28,10 +28,10 @@ index d42e9ad..e46f6f0 100644
 -| CLX-SP         | B0       | 06-55-06/bf | 04003605 |          | Xeon Scalable Gen2
 -| EMR-SP         | A0       | 06-cf-01/87 | 21000291 |          | Xeon Scalable Gen5
 -
- 
+ # Release Notes
  ## [microcode-20250211](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20250211)
  
-@@ -149,14 +142,6 @@
+@@ -252,14 +245,6 @@
  | SPR-SP         | E5/S3    | 06-8f-08/87 | 2b000603 | 2b000620 | Xeon Scalable Gen4
  | TWL            | N0       | 06-be-00/19 | 0000001a | 0000001c | Core i3-N305/N300, N50/N97/N100/N200, Atom x7211E/x7213E/x7425E
  
