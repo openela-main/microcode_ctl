@@ -1,4 +1,4 @@
-%define intel_ucode_version 20251111
+%define intel_ucode_version 20260210
 
 %define caveat_dir %{_datarootdir}/microcode_ctl/ucode_with_caveats
 %define microcode_ctl_libexec %{_libexecdir}/microcode_ctl
@@ -467,6 +467,41 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Feb 25 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1.20260210-1
+- Update Intel CPU microcode to microcode-20260210 release (RHEL-152418)
+- Microcode files (/platform_mask shown) with revision updates (in hex):
+  06-6a-06/87: Ice Lake-X: d000410 to d000421
+  06-6c-01/10: Ice Lake-D: 10002e0 to 10002f1
+  06-7e-05/80: Ice Lake-L: 00ca to 00cc
+  06-8c-01/80: Tiger Lake: 00bc to 00be
+  06-8c-02/c2: Tiger Lake: 003c to 003e
+  06-8d-01/c2: Tiger Lake-H: 0056 to 0058
+  06-8f-07/87: Sapphire Rapids: 2b000650 to 2b000661
+  06-8f-08/10: Sapphire Rapids with HBM: 2c000410 to 2c000421
+  06-8f-08/87: Sapphire Rapids: 2b000650 to 2b000661
+  06-97-02/07: Alder Lake: 003d to 003e
+  06-97-05/07: Alder Lake: 003d to 003e
+  06-9a-03/80: Alder Lake-L: 043a to 043b
+  06-9a-04/80: Alder Lake-L: 043a to 043b
+  06-9a-04/40: Arizona Beach (Atom C11xx): 000b to 000c
+  06-9a-04/80: Alder Lake-L: 043a to 043b
+  06-a7-01/02: Rocket Lake: 0064 to 0065
+  06-aa-04/e6: Meteor Lake-L: 0025 to 0028
+  06-ad-01/20: Granite Rapids-X: a000124 to a000133
+  06-ad-01/95: Granite Rapids-X: 10003f0 to 1000405
+  06-ae-01/97: Granite Rapids-D: 1000273 to 10002f3
+  06-b5-00/80: Arrow Lake-U: 000a to 000d
+  06-b7-01/32: Raptor Lake: 0132 to 0133
+  06-ba-02/e0: Raptor Lake-P: 6133 to 6134
+  06-ba-03/e0: Raptor Lake-P: 6133 to 6134
+  06-be-00/19: Gracemont (Alder Lake-N): 001e to 0021
+  06-bf-02/07: Raptor Lake-S: 003d to 003e
+  06-bf-05/07: Raptor Lake-S: 003d to 003e
+  06-c5-02/82: Arrow Lake-H: 011a to 011b
+  06-c6-02/82: Arrow Lake: 011a to 011b
+  06-cf-02/87: Emerald Rapids: 210002c0 to 210002d3
+Resolves: RHEL-152418
+
 * Mon Nov 24 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1.20251111-1
 - Fix typo in /usr/share/microcode_ctl/ucode_with_caveats/intel-06-8f-08/config
 - Update Intel CPU microcode to microcode-20251111 release (RHEL-128259)
