@@ -11,8 +11,8 @@
 
 Summary:        CPU microcode updates for Intel x86 processors
 Name:           microcode_ctl
-Version:        20250812
-Release:        1.%{intel_ucode_version}.1%{?dist}
+Version:        %{intel_ucode_version}
+Release:        1%{?dist}
 Epoch:          4
 License:        CC0 and Redistributable, no modification permitted
 URL:            https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
@@ -467,8 +467,8 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Wed Feb 25 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1.20260210-1
-- Update Intel CPU microcode to microcode-20260210 release (RHEL-152418)
+* Wed Feb 25 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20260210-1
+- Update Intel CPU microcode to microcode-20260210 release (RHEL-150997)
 - Microcode files (/platform_mask shown) with revision updates (in hex):
   06-6a-06/87: Ice Lake-X: d000410 to d000421
   06-6c-01/10: Ice Lake-D: 10002e0 to 10002f1
@@ -500,11 +500,12 @@ rm -rf %{buildroot}
   06-c5-02/82: Arrow Lake-H: 011a to 011b
   06-c6-02/82: Arrow Lake: 011a to 011b
   06-cf-02/87: Emerald Rapids: 210002c0 to 210002d3
-Resolves: RHEL-152418
+Resolves: RHEL-150997
 
-* Mon Nov 24 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20250812-1.20251111-1
+* Mon Nov 24 2025 Denys Vlasenko <dvlasenk@redhat.com> - 4:20251111-1
 - Fix typo in /usr/share/microcode_ctl/ucode_with_caveats/intel-06-8f-08/config
-- Update Intel CPU microcode to microcode-20251111 release (RHEL-128259)
+  (RHEL-123517)
+- Update Intel CPU microcode to microcode-20251111 release (RHEL-128195)
   - Addition of 06-ae-01/0x97 microcode at revision 0x1000273;
   - Update of 06-8f-04/0x87 (SPR-SP E0/S1) microcode (in
     intel-ucode/06-8f-07) from revision 0x2b000643 up to 0x2b000650;
