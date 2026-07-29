@@ -1,4 +1,4 @@
-%define intel_ucode_version 20260227
+%define intel_ucode_version 20260512
 %global debug_package %{nil}
 
 %define caveat_dir %{_datarootdir}/microcode_ctl/ucode_with_caveats
@@ -636,6 +636,25 @@ rm -rf %{buildroot}
 
 
 %changelog
+
+* Wed May 20 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20260512-1
+- Update Intel CPU microcode to microcode-20260512 release (RHEL-176241)
+- New microcode files (in hex):
+  06-cc-02: Panther Lake: revision 011b
+  06-cc-03: Panther Lake: revision 011b
+- Microcode files (/platform_mask shown) with revision updates (in hex):
+  06-8f-07/87: Sapphire Rapids: 2b000661 to 2b000670
+  06-8f-08/87: Sapphire Rapids: 2b000661 to 2b000670
+  06-ad-01/20: Granite Rapids-X: a000133 to a000142
+  06-ad-01/95: Granite Rapids-X: 1000405 to 1000423
+  06-ae-01/97: Granite Rapids-D: 1000303 to 1000307
+  06-af-03/01: Crestmont (Sierra Forest): 3000382 to 30003a3
+  06-bd-01/80: Lunar Lake: 0125 to 0126
+  06-c5-02/82: Arrow Lake-H: 011b to 0121
+  06-c6-02/82: Arrow Lake: 011b to 0121
+  06-cf-02/87: Emerald Rapids: 210002d3 to 210002e0
+Resolves: RHEL-176241
+
 * Wed Mar 25 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20260227-1
 - Update Intel CPU microcode to microcode-20260227 release (RHEL-159424)
 - Microcode files (/platform_mask shown) with revision updates (in hex):
