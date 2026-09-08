@@ -1,4 +1,4 @@
-%define intel_ucode_version 20260512
+%define intel_ucode_version 20260812
 %global debug_package %{nil}
 
 %define caveat_dir %{_datarootdir}/microcode_ctl/ucode_with_caveats
@@ -636,6 +636,50 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Aug 14 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20260812-1
+- Update Intel CPU microcode to microcode-20260812 release (RHEL-240770)
+- Security advisories:
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01379.html
+  CVE-2025-31936
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01404.html
+  CVE-2025-31938
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01423.html
+  CVE-2026-20917
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01428.html
+  CVE-2025-35973
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01435.html
+  CVE-2026-20716
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01441.html
+  CVE-2026-20760
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01442.html
+  CVE-2026-20713, CVE-2026-20901
+  https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01443.html
+  CVE-2026-20707
+- New microcode files (in hex):
+  06-b7-04: Raptor Lake: revision 0137
+  06-d5-01: Wildcat Lake: revision 000c
+  06-d7-00: Bartlett Lake: revision 0137
+- Microcode files (/platform_mask shown) with revision updates (in hex):
+  06-6a-06/87: Ice Lake-X: d000421 to d000433
+  06-6c-01/10: Ice Lake-D: 10002f1 to 1000301
+  06-7e-05/80: Ice Lake-L: 00cc to 00ce
+  06-8f-07/87: Sapphire Rapids: 2b000670 to 2b000685
+  06-8f-08/10: Sapphire Rapids with HBM: 2c000421 to 2c000435
+  06-8f-08/87: Sapphire Rapids: 2b000670 to 2b000685
+  06-a7-01/02: Rocket Lake: 0065 to 0066
+  06-ad-01/20: Granite Rapids-X: a000142 to a000151
+  06-ad-01/95: Granite Rapids-X: 1000423 to 1000434
+  06-ae-01/97: Granite Rapids-D: 1000307 to 1000309
+  06-af-03/01: Crestmont (Sierra Forest): 30003a3 to 30003b2
+  06-b5-00/80: Arrow Lake-U: 000d to 000e
+  06-b7-01/36: Raptor Lake: 0133 to 0137, platform bit 04 added
+  06-bd-01/80: Lunar Lake: 0126 to 0128
+  06-c5-02/82: Arrow Lake-H: 0121 to 0122
+  06-c6-02/82: Arrow Lake: 0121 to 0122
+  06-cc-02/94: Panther Lake: 011b to 011c, platform bit 04 added, also used for 06-e5-02
+  06-cc-03/94: Panther Lake: 011b to 011c, platform bit 04 added, also used for 06-e5-02
+  06-cf-02/87: Emerald Rapids: 210002e0 to 210002f4
+Resolves: RHEL-240770
 
 * Wed May 20 2026 Denys Vlasenko <dvlasenk@redhat.com> - 4:20260512-1
 - Update Intel CPU microcode to microcode-20260512 release (RHEL-176241)
